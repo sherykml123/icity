@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فندق شيراتون الخبر - المنظومة الموحدة للمطابقة الفنية وعروض الأسعار (Division 26)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo & Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Animate.css for smooth entrance effects -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0B2545',
+                            navyDark: '#07162C',
+                            navyLight: '#134074',
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            goldDark: '#AA8C2C',
+                            emerald: '#10B981',
+                            emeraldDark: '#059669',
+                            accent: '#3B82F6',
+                            lightBg: '#F4F7FC'
+                        }
+                    },
+                    fontFamily: {
+                        arabic: ['Cairo', 'sans-serif'],
+                        english: ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glow': '0 0 25px -5px rgba(212, 175, 55, 0.4)',
+                        'card-hover': '0 20px 30px -10px rgba(11, 37, 69, 0.12)',
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.15)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #F4F7FC; }
+        .font-en { font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #e2e8f0; }
+        ::-webkit-scrollbar-thumb { background: #134074; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb-cover:hover { background: #0B2545; }
+        
+        /* Glassmorphism custom classes */
+        .glass-header {
+            background: linear-gradient(135deg, rgba(11, 37, 69, 0.95) 0%, rgba(19, 64, 116, 0.95) 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-gold {
+            animation: pulseGold 2s infinite;
+        }
+        @keyframes pulseGold {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6); }
+            70% { box-shadow: 0 0 0 12px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-brand-gold selection:text-brand-navy transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Bar -->
+    <header class="glass-header text-white shadow-2xl sticky top-0 z-40 border-b border-brand-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center py-4 gap-4">
+                
+                <!-- Brand Title & Logo -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="bg-gradient-to-tr from-brand-gold to-yellow-200 text-brand-navy p-4 rounded-2xl font-black text-2xl shadow-glow transform hover:rotate-6 transition duration-300">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-black tracking-wide flex items-center gap-2">
+                            <span>فندق شيراتون الخبر</span>
+                            <span class="text-xs sm:text-sm font-bold px-2.5 py-0.5 bg-brand-gold/20 text-brand-gold rounded-full border border-brand-gold/40 font-en">Sheraton El Khobar</span>
+                        </h1>
+                        <p id="headerSubTitle" class="text-xs text-blue-200 mt-0.5 font-semibold" data-ar="مصفوفة المطابقة الفنية الموحدة الشاملة - أعمال الكهرباء (Division 26)" data-en="Comprehensive Unified Technical Compliance Matrix - Electrical (Division 26)">مصفوفة المطابقة الفنية الموحدة الشاملة - أعمال الكهرباء (Division 26)</p>
+                    </div>
+                </div>
+
+                <!-- Supplier Badge Card -->
+                <div class="bg-white/10 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-white/20 text-xs flex flex-col gap-1 w-full lg:w-auto shadow-inner">
+                    <div class="flex justify-between items-center gap-6">
+                        <span class="text-brand-gold font-bold flex items-center gap-1.5"><i class="fa-solid fa-building"></i> <span data-ar="المقاول / المورد:" data-en="Contractor / Supplier:">المقاول / المورد:</span></span>
+                        <span class="font-extrabold text-white bg-white/10 px-2 py-0.5 rounded" data-ar="مؤسسة المدينة الذكية بالدمام" data-en="iCity Solution, Dammam">مؤسسة المدينة الذكية بالدمام</span>
+                    </div>
+                    <div class="flex justify-between items-center gap-6 text-blue-100 border-t border-white/10 pt-1">
+                        <span><i class="fa-solid fa-user-tie me-1 text-brand-gold"></i> م. شريف محمد كمال</span>
+                        <span class="font-en tracking-wider">📱 0531424450 | ✉️ sherif@icity-solution.com</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Controls & Language Switcher -->
+                <div class="flex items-center space-x-3 space-x-reverse flex-wrap gap-2">
+                    <button id="langToggleBtn" onclick="toggleLanguage()" class="px-4 py-2.5 bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl text-xs font-bold flex items-center gap-2 transition shadow-md hover:scale-105 active:scale-95 text-amber-200">
+                        <i class="fa-solid fa-globe text-brand-gold text-sm animate-spin-slow"></i>
+                        <span id="langLabel">English</span>
+                    </button>
+                    
+                    <!-- Quick Navigation Action Button -->
+                    <button id="mainToggleViewBtn" onclick="toggleMasterView()" class="px-5 py-2.5 bg-gradient-to-r from-brand-gold via-yellow-400 to-amber-500 text-brand-navy hover:from-amber-400 hover:to-yellow-300 font-black rounded-xl text-xs flex items-center gap-2.5 transition shadow-glow transform hover:scale-105 active:scale-95 pulse-gold">
+                        <i class="fa-solid fa-file-invoice-dollar text-sm" id="masterBtnIcon"></i>
+                        <span id="masterBtnText" data-ar="الذهاب الي عرض السعر" data-en="Go to Quotation">الذهاب الي عرض السعر</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sub Navigation Tabs for Matrix View -->
+            <div id="matrixTabsNav" class="flex border-t border-white/15 mt-2 overflow-x-auto scrollbar-none">
+                <button id="tab-summary-btn" onclick="switchMatrixTab('summary')" class="py-3 px-6 text-sm font-black border-b-4 border-brand-gold text-brand-gold flex items-center gap-2.5 transition-all whitespace-nowrap bg-white/5">
+                    <i class="fa-solid fa-chart-pie text-brand-gold"></i>
+                    <span data-ar="الملخص التنفيذي الموحد (Executive Summary)" data-en="Unified Executive Summary">الملخص التنفيذي الموحد (Executive Summary)</span>
+                </button>
+                <button id="tab-matrix-btn" onclick="switchMatrixTab('matrix')" class="py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5">
+                    <i class="fa-solid fa-table-list"></i>
+                    <span data-ar="جدول المطابقة الموحد (Combined Matrix)" data-en="Combined Compliance Matrix">جدول المطابقة الموحد (Combined Matrix)</span>
+                </button>
+            </div>
+
+            <!-- Sub Navigation Tabs for Quotation View (Initially Hidden) -->
+            <div id="quotationTabsNav" class="flex border-t border-white/15 mt-2 overflow-x-auto scrollbar-none hidden">
+                <button id="tab-q-summary-btn" onclick="switchQuotationTab('summary')" class="py-3 px-6 text-sm font-black border-b-4 border-brand-gold text-brand-gold flex items-center gap-2.5 transition-all whitespace-nowrap bg-white/5">
+                    <i class="fa-solid fa-chart-pie text-brand-gold"></i>
+                    <span data-ar="الملخص المالي التنفيذي" data-en="Executive Financial Summary">الملخص المالي التنفيذي</span>
+                </button>
+                <button id="tab-q-sheet1-btn" onclick="switchQuotationTab('sheet1')" class="py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5">
+                    <i class="fa-solid fa-pipe"></i>
+                    <span data-ar="1. الأنابيب وعلب التوصيل" data-en="1. Conduits & Boxes">1. الأنابيب وعلب التوصيل</span>
+                </button>
+                <button id="tab-q-sheet2-btn" onclick="switchQuotationTab('sheet2')" class="py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span data-ar="2. الأسلاك والكابلات" data-en="2. Wires & Cables">2. الأسلاك والكابلات</span>
+                </button>
+                <button id="tab-q-sheet3-btn" onclick="switchQuotationTab('sheet3')" class="py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-ar="3. صواني الكابلات والترنكنغ" data-en="3. Cable Trays & Trunking">3. صواني الكابلات والترنكنغ</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full space-y-8">
+
+        <!-- ======================================================== -->
+        <!-- VIEW 1: COMPLIANCE MATRIX                                -->
+        <!-- ======================================================== -->
+        <div id="view-compliance-matrix" class="space-y-8 animate__animated animate__fadeIn">
+            
+            <!-- TAB 1: EXECUTIVE SUMMARY -->
+            <section id="tab-summary" class="space-y-8">
+                
+                <!-- Hero Banner Card -->
+                <div class="bg-gradient-to-br from-white via-blue-50/50 to-indigo-50/80 rounded-3xl shadow-xl border border-blue-100 p-6 sm:p-10 relative overflow-hidden">
+                    <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-navy/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-8 relative z-10">
+                        <div class="space-y-4 max-w-3xl">
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-navy text-white font-black rounded-full text-xs font-en shadow-md">
+                                <i class="fa-solid fa-certificate text-brand-gold"></i> Division 26 - Complete Electrical Systems & Wires
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-black text-brand-navy leading-tight" data-ar="تقييم مطابقة الكابلات، الأسلاك، مسارات الكابلات والأنابيب المتكاملة" data-en="Comprehensive Compliance Evaluation - Power, Fire Alarm, Data, Trays & Conduits">
+                                تقييم مطابقة الكابلات، الأسلاك، مسارات الكابلات والأنابيب المتكاملة
+                            </h2>
+                            <p class="text-gray-600 text-sm sm:text-base leading-relaxed" data-ar="يجمع هذا التطبيق الموحد تقييم كابلات القوى والأسلاك (Riyadh Cables)، كابلات إنذار الحريق (Belden)، شبكات الحاسب (Corning)، صواني الكابلات (WESCOSA)، الأنابيب الصلبة وعلب التوصيل (Alrouf)، وأنابيب EMT (Panasonic) لمشروع فندق شيراتون الخبر بمعايير هندسية فائقة." data-en="This unified application integrates Power & Wires (Riyadh Cables), Fire Alarm (Belden), Data (Corning), Cable Trays (WESCOSA), Conduits & Boxes (Alrouf), and Panasonic EMT technical evaluations for Sheraton El Khobar Hotel.">
+                                يجمع هذا التطبيق الموحد تقييم كابلات القوى والأسلاك (Riyadh Cables)، كابلات إنذار الحريق (Belden)، شبكات الحاسب (Corning)، صواني الكابلات (WESCOSA)، الأنابيب الصلبة وعلب التوصيل (Alrouf)، وأنابيب EMT (Panasonic) لمشروع فندق شيراتون الخبر بمعايير هندسية فائقة.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-brand-navy text-white p-6 rounded-2xl shadow-xl border border-white/10 flex flex-col gap-3 min-w-[320px]">
+                            <div class="flex justify-between text-xs text-blue-200">
+                                <span data-ar="الموردون الأساسيون:" data-en="Suppliers:">الموردون الأساسيون:</span>
+                                <span class="font-bold text-brand-gold font-en">Riyadh, Belden, Corning, WESCOSA, Alrouf, Panasonic</span>
+                            </div>
+                            <div class="flex justify-between text-xs text-blue-200">
+                                <span data-ar="إجمالي البنود المقيّمة:" data-en="Total Evaluated Items:">إجمالي البنود المقيّمة:</span>
+                                <span class="font-bold text-emerald-400 font-en text-sm">54 بند (100% مطابقة)</span>
+                            </div>
+                            <div class="flex justify-between text-xs text-blue-200 border-t pt-2 border-white/10">
+                                <span data-ar="المقاول التنفيذي:" data-en="Contractor:">المقاول التنفيذي:</span>
+                                <span class="font-bold text-white">مؤسسة المدينة الذكية بالدمام</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KPI Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-brand-navy/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="إجمالي البنود" data-en="Total Items">إجمالي البنود</p>
+                                <h3 id="kpi-total" class="text-3xl font-black text-brand-navy mt-1 font-en">54</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-blue-50 text-brand-navy rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-check-circle text-blue-500"></i>
+                            <span data-ar="منظومة Division 26 متكاملة" data-en="Complete Division 26">كابلات + مسارات + أنابيب</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-emerald-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="البنود المطابقة" data-en="Compliant Items">البنود المطابقة</p>
+                                <h3 id="kpi-compliant" class="text-3xl font-black text-emerald-600 mt-1 font-en">43</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-thumbs-up text-emerald-500"></i>
+                            <span data-ar="تطابق كامل للمواصفات" data-en="Fully compliant">تطابق كامل للمواصفات</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-blue-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="تتجاوز المواصفة" data-en="Exceeds Specs">تتجاوز المواصفة</p>
+                                <h3 id="kpi-exceeds" class="text-3xl font-black text-blue-600 mt-1 font-en">11</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-star text-amber-500"></i>
+                            <span data-ar="ميزات إضافية متقدمة" data-en="Superior features">ميزات إضافية متقدمة</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-red-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="غير مطابقة" data-en="Non-Compliant">غير مطابقة</p>
+                                <h3 id="kpi-noncompliant" class="text-3xl font-black text-red-600 mt-1 font-en">0</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-check text-red-500"></i>
+                            <span data-ar="لا توجد انحرافات" data-en="Zero deviations">لا توجد أي انحرافات</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-brand-gold/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="نسبة المطابقة" data-en="Overall Compliance">نسبة المطابقة</p>
+                                <h3 id="kpi-rate" class="text-3xl font-black text-emerald-600 mt-1 font-en">100%</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-amber-50 text-brand-gold rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-2.5 mt-4 overflow-hidden">
+                            <div class="bg-gradient-to-r from-emerald-500 to-teal-400 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Summary & Highlights Card -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 bg-white rounded-3xl shadow-card-hover border border-gray-100 p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+                        <div class="border-b border-gray-100 pb-4">
+                            <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+                                <i class="fa-solid fa-file-contract text-brand-gold text-2xl"></i>
+                                <span data-ar="ملخص الاعتماد الفني للمنظومة الكهربائية وكابلات المشروع المتكاملة" data-en="Comprehensive Technical Summary">ملخص الاعتماد الفني للمنظومة الكهربائية وكابلات المشروع المتكاملة</span>
+                            </h3>
+                        </div>
+
+                        <div class="prose max-w-none text-gray-700 space-y-4 text-sm sm:text-base leading-relaxed">
+                            <div class="p-4 bg-emerald-50/80 border-r-4 border-emerald-500 rounded-2xl text-emerald-900 font-bold shadow-sm">
+                                <span data-ar="النتيجة النهائية: كافة الكابلات، الأسلاك، صواني الكابلات، الأنابيب وعلب التوصيل مطابقة تماماً بنسبة 100% لمتطلبات مواصفات فندق شيراتون الخبر ومعتمدة من كبرى المصانع العالمية والمحلية." data-en="Final Verdict: All cables, wires, trays, conduits, and junction boxes are 100% compliant with Sheraton El Khobar Hotel specifications.">
+                                    النتيجة النهائية: كافة الكابلات، الأسلاك، صواني الكابلات، الأنابيب وعلب التوصيل مطابقة تماماً بنسبة 100% لمتطلبات مواصفات فندق شيراتون الخبر ومعتمدة من كبرى المصانع العالمية والمحلية.
+                                </span>
+                            </div>
+                            <h4 class="text-base font-bold text-gray-800" data-ar="الأقسام الستة الرئيسية المدمجة في هذا التطبيق الموحد:" data-en="Integrated Systems in This Report:">الأقسام الستة الرئيسية المدمجة في هذا التطبيق الموحد:</h4>
+                            <ul class="space-y-2.5 list-disc list-inside text-gray-600 font-medium">
+                                <li><strong class="text-gray-900">كابلات وأسلاك القوى (<span class="font-en text-brand-navy">Riyadh Cables</span>):</strong> 10 بنود تشمل أسلاك HO7V، كابلات XLPE ومخارج BS 1363.</li>
+                                <li><strong class="text-gray-900">كابلات الإنذار والبيانات (<span class="font-en text-brand-navy">Belden & Corning</span>):</strong> كابلات Belden 79002FS لإنذار الحريق و Corning Cat 6A U/UTP (500 MHz).</li>
+                                <li><strong class="text-gray-900">صواني الكابلات والترنكنغ (<span class="font-en text-brand-navy">WESCOSA</span>):</strong> 12 بند تشمل Perforated trays وأطقم التعليق ASTM A123.</li>
+                                <li><strong class="text-gray-900">الأنابيب وعلب التوصيل الصلبة (<span class="font-en text-brand-navy">Alrouf</span>):</strong> 17 بند تشمل أنابيب GI وعلب سحب بسُمك 1.5مم/2.0مم.</li>
+                                <li><strong class="text-gray-900">أنابيب ووصلات EMT (<span class="font-en text-brand-navy">Panasonic SPT</span>):</strong> 15 بند معتمدة UL 797 برقم E-44051 ووصلات ضغطية.</li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-4 flex gap-4">
+                            <button onclick="switchMatrixTab('matrix')" class="px-6 py-3.5 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-2xl text-sm transition shadow-lg flex items-center gap-2 transform hover:scale-105 active:scale-95">
+                                <span data-ar="الانتقال إلى جدول المطابقة الموحد" data-en="Go to Combined Matrix">الانتقال إلى جدول المطابقة الموحد</span>
+                                <i class="fa-solid fa-arrow-left font-en"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 p-6 sm:p-8 flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-lg font-black text-gray-900 border-b pb-3 mb-6 flex items-center gap-2">
+                                <i class="fa-solid fa-chart-pie text-brand-navy"></i>
+                                <span data-ar="توزيع حالة البنود الإجمالية (54 بند)" data-en="Status Distribution">توزيع حالة البنود الإجمالية (54 بند)</span>
+                            </h4>
+                            <div class="space-y-5">
+                                <div>
+                                    <div class="flex justify-between text-xs font-black text-gray-700 mb-1.5">
+                                        <span data-ar="مطابق (Compliant)" data-en="Compliant">مطابق (Compliant)</span>
+                                        <span class="font-en text-emerald-600">43 بند (79.6%)</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-3.5 overflow-hidden p-0.5 border border-gray-200">
+                                        <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 79.6%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-xs font-black text-gray-700 mb-1.5">
+                                        <span data-ar="أعلى من المطلوب (Higher Spec)" data-en="Higher Spec">أعلى من المطلوب (Higher Spec)</span>
+                                        <span class="font-en text-blue-600">11 بند (20.4%)</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-3.5 overflow-hidden p-0.5 border border-gray-200">
+                                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 20.4%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex justify-between text-xs font-black text-gray-700 mb-1.5">
+                                        <span data-ar="غير مطابق (Non-Compliant)" data-en="Non-Compliant">غير مطابق (Non-Compliant)</span>
+                                        <span class="font-en text-red-600">0 (0%)</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 rounded-full h-3.5 overflow-hidden p-0.5 border border-gray-200">
+                                        <div class="bg-red-500 h-2.5 rounded-full" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 p-4 bg-amber-50/80 rounded-2xl border border-amber-200 text-xs text-amber-900 flex items-start gap-3 shadow-sm">
+                            <i class="fa-solid fa-lightbulb text-amber-600 text-base mt-0.5"></i>
+                            <span data-ar="ملاحظة: يمكنك فلترة الجدول حسب المورد أو النظام المطلوب من خلال أزرار الفلترة العلوية في جدول المطابقة." data-en="Note: You can filter the matrix by supplier or system using filter buttons.">ملاحظة: يمكنك فلترة الجدول حسب المورد أو النظام المطلوب من خلال أزرار الفلترة العلوية في جدول المطابقة.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: COMPLIANCE MATRIX TABLE -->
+            <section id="tab-matrix" class="space-y-6 hidden animate__animated animate__fadeIn">
+                <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-card-hover border border-gray-100 flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <div class="relative w-full lg:w-96">
+                        <i class="fa-solid fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="searchInput" oninput="filterMatrix()" placeholder="بحث في الكابلات، الأنابيب، الموردين، أو الأكواد..." class="w-full pr-11 pl-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy transition font-medium">
+                    </div>
+
+                    <div class="flex items-center gap-2 w-full lg:w-auto overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
+                        <span class="text-xs font-bold text-gray-500 me-2" data-ar="فلترة النظام:" data-en="System Filter:">فلترة النظام:</span>
+                        <button onclick="setSystemFilter('ALL')" id="filter-sys-all" class="px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95">الكل (54)</button>
+                        <button onclick="setSystemFilter('RIYADH/BELDEN')" id="filter-sys-cables" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-amber-100 transition hover:scale-105 active:scale-95">الكابلات والأسلاك (10)</button>
+                        <button onclick="setSystemFilter('WESCOSA')" id="filter-sys-wescosa" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-blue-100 transition hover:scale-105 active:scale-95">WESCOSA (12)</button>
+                        <button onclick="setSystemFilter('ALROUF')" id="filter-sys-alrouf" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-amber-100 transition hover:scale-105 active:scale-95">Alrouf (17)</button>
+                        <button onclick="setSystemFilter('PANASONIC')" id="filter-sys-panasonic" class="px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-emerald-100 transition hover:scale-105 active:scale-95">Panasonic (15)</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-right border-collapse">
+                            <thead>
+                                <tr class="bg-brand-navy text-white text-xs uppercase tracking-wider font-extrabold">
+                                    <th class="py-4 px-4 text-center w-12">#</th>
+                                    <th class="py-4 px-4 text-center" data-ar="المصنع / النظام" data-en="Supplier">المصنع / النظام</th>
+                                    <th class="py-4 px-6" data-ar="عنصر المواصفة المطلوب (Project Specification)" data-en="Specified Requirement">عنصر المواصفة المطلوب</th>
+                                    <th class="py-4 px-4 text-center" data-ar="مرجع المواصفة" data-en="Spec Ref">مرجع المواصفة</th>
+                                    <th class="py-4 px-6" data-ar="منتج ومواصفات المورد المقترحة" data-en="Proposed Product Spec">مواصفات المورد المقترحة</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الكود / الصنف" data-en="Item Code">الكود / الصنف</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الحالة الفنية" data-en="Status">الحالة الفنية</th>
+                                    <th class="py-4 px-4 text-center" data-ar="التفاصيل" data-en="Details">التفاصيل</th>
+                                </tr>
+                            </thead>
+                            <tbody id="matrixTableBody" class="divide-y divide-gray-100 text-sm">
+                                <!-- Rendered via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- VIEW 2: ELECTRICAL QUOTATION (Initially Hidden)           -->
+        <!-- ======================================================== -->
+        <div id="view-electrical-quotation" class="space-y-8 hidden animate__animated animate__fadeIn">
+            
+            <!-- QUOTATION TAB 1: EXECUTIVE SUMMARY -->
+            <section id="tab-q-summary" class="space-y-8">
+                
+                <!-- Hero Financial Card -->
+                <div class="bg-gradient-to-br from-brand-navy via-brand-navyLight to-blue-900 rounded-3xl shadow-2xl p-6 sm:p-10 text-white relative overflow-hidden border border-brand-gold/30">
+                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-8 relative z-10">
+                        <div class="space-y-4 max-w-3xl">
+                            <span class="px-3.5 py-1.5 bg-brand-gold text-brand-navy font-black rounded-full text-xs font-en shadow-md">
+                                Division 26 - Electrical First Fix Material Supply
+                            </span>
+                            <h2 class="text-2xl sm:text-3xl font-black leading-tight" data-ar="ملخص عروض أسعار التوريد الكهربائي لمشروع فندق شيراتون الخبر" data-en="Executive Quotation Summary - Sheraton Hotel Project">
+                                ملخص عروض أسعار التوريد الكهربائي لمشروع فندق شيراتون الخبر
+                            </h2>
+                            <p class="text-blue-100 text-sm sm:text-base leading-relaxed" data-ar="يحتوي هذا المستند التفاعلي على كافة تفاصيل الكميات والأسعار المعتمدة من م. هاني، ومقسّمة بدقة على الأقسام الثلاثة: الأنابيب وعلب التوصيل، الأسلاك والكابلات، وصواني الكابلات والترنكنغ." data-en="This interactive document contains all verified quantities and unit prices approved by Eng. Hany across Conduits & Boxes, Wires & Cables, and Cable Trays & Trunking.">
+                                يحتوي هذا المستند التفاعلي على كافة تفاصيل الكميات والأسعار المعتمدة من م. هاني، ومقسّمة بدقة على الأقسام الثلاثة: الأنابيب وعلب التوصيل، الأسلاك والكابلات، وصواني الكابلات والترنكنغ.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl shadow-inner border border-white/20 flex flex-col justify-between min-w-[300px]">
+                            <span class="text-xs text-amber-300 uppercase tracking-wider font-bold" data-ar="الإجمالي العام للعرض (SAR)" data-en="Grand Total Quotation (SAR)">الإجمالي العام للعرض (SAR)</span>
+                            <h3 id="grand-total-display" class="text-3xl sm:text-4xl font-black text-white mt-2 font-en gold-gradient-text">4,965,045.01 SAR</h3>
+                            <span class="text-xs text-blue-200 mt-2 font-en font-semibold">Total Items: 97 Items (100% Verified)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KPI Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-blue-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="1. الأنابيب وعلب التوصيل" data-en="Conduits & Boxes">1. الأنابيب وعلب التوصيل</p>
+                                <h3 id="kpi-sheet1-val" class="text-xl sm:text-2xl font-black text-brand-navy mt-1 font-en">885,523.13 SAR</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-blue-50 text-brand-navy rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-pipe"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-file-lines text-blue-500"></i>
+                            <span data-ar="17 بنداً معتمداً" data-en="17 approved items">17 بنداً معتمداً</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-emerald-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="2. الأسلاك والكابلات" data-en="Wires & Cables">2. الأسلاك والكابلات</p>
+                                <h3 id="kpi-sheet2-val" class="text-xl sm:text-2xl font-black text-emerald-600 mt-1 font-en">2,435,570.92 SAR</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-file-lines text-emerald-500"></i>
+                            <span data-ar="10 بنود معتمدة" data-en="10 approved items">10 بنود معتمدة</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-blue-500/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="3. صواني الكابلات والترنكنغ" data-en="Cable Trays & Trunking">3. صواني الكابلات والترنكنغ</p>
+                                <h3 id="kpi-sheet3-val" class="text-xl sm:text-2xl font-black text-blue-600 mt-1 font-en">1,643,950.96 SAR</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-file-lines text-blue-500"></i>
+                            <span data-ar="70 بنداً معتمداً" data-en="70 approved items">70 بنداً معتمداً</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-3xl shadow-card-hover border border-gray-100 hover:border-brand-gold/30 transition transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider" data-ar="إجمالي بنود التوريد" data-en="Total Items">إجمالي بنود التوريد</p>
+                                <h3 class="text-xl sm:text-2xl font-black text-brand-gold mt-1 font-en">97 Items</h3>
+                            </div>
+                            <div class="w-14 h-14 bg-amber-50 text-brand-gold rounded-2xl flex items-center justify-center text-2xl font-bold shadow-sm">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-circle-check text-amber-500"></i>
+                            <span data-ar="دقة تامة بنسبة 100%" data-en="100% Mathematical Accuracy">دقة تامة بنسبة 100%</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Financial Distribution Breakdown -->
+                <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 p-6 sm:p-8 space-y-6">
+                    <h3 class="text-xl font-black text-gray-900 border-b pb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-chart-pie text-brand-gold text-xl"></i>
+                        <span data-ar="توزيع التكاليف على الأقسام الرئيسية" data-en="Cost Distribution by Section">توزيع التكاليف على الأقسام الرئيسية</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-5 bg-gradient-to-br from-gray-50 to-blue-50/40 rounded-2xl border border-gray-200/80 space-y-3 shadow-sm">
+                            <div class="flex justify-between text-sm font-bold text-gray-800">
+                                <span data-ar="الأنابيب وعلب التوصيل" data-en="Conduits & Boxes">الأنابيب وعلب التوصيل</span>
+                                <span class="font-en text-brand-navy font-black">17.8%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="bg-blue-600 h-3 rounded-full" style="width: 17.8%"></div>
+                            </div>
+                            <p class="text-xs text-gray-600 font-en font-bold">885,523.13 SAR</p>
+                        </div>
+
+                        <div class="p-5 bg-gradient-to-br from-gray-50 to-emerald-50/40 rounded-2xl border border-gray-200/80 space-y-3 shadow-sm">
+                            <div class="flex justify-between text-sm font-bold text-gray-800">
+                                <span data-ar="الأسلاك والكابلات" data-en="Wires & Cables">الأسلاك والكابلات</span>
+                                <span class="font-en text-emerald-600 font-black">49.1%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="bg-emerald-500 h-3 rounded-full" style="width: 49.1%"></div>
+                            </div>
+                            <p class="text-xs text-gray-600 font-en font-bold">2,435,570.92 SAR</p>
+                        </div>
+
+                        <div class="p-5 bg-gradient-to-br from-gray-50 to-blue-50/40 rounded-2xl border border-gray-200/80 space-y-3 shadow-sm">
+                            <div class="flex justify-between text-sm font-bold text-gray-800">
+                                <span data-ar="صواني الكابلات والترنكنغ" data-en="Cable Trays & Trunking">صواني الكابلات والترنكنغ</span>
+                                <span class="font-en text-blue-600 font-black">33.1%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="bg-brand-navy h-3 rounded-full" style="width: 33.1%"></div>
+                            </div>
+                            <p class="text-xs text-gray-600 font-en font-bold">1,643,950.96 SAR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUOTATION SHEET 1: Conduits & Boxes -->
+            <section id="tab-q-sheet1" class="space-y-6 hidden animate__animated animate__fadeIn">
+                <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-card-hover border border-gray-100 flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h3 class="text-lg font-black text-gray-900" data-ar="1. جدول الأنابيب، الأنابيب المرنة، الملحقات وعلب التوصيل" data-en="1. Conduits, Flexible Conduits, Fittings & Back Boxes">1. جدول الأنابيب، الأنابيب المرنة، الملحقات وعلب التوصيل</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">Sheraton Hotel Project, Al Khobar – First Fix Material (Electrical) – Eng. Hany approved</p>
+                    </div>
+                    <div class="relative w-full lg:w-80">
+                        <i class="fa-solid fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="searchSheet1" oninput="filterTable('sheet1')" placeholder="بحث في الوصف، المقاس، أو الملاحظات..." class="w-full pr-11 pl-4 py-2.5 bg-gray-50 border border-gray-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy transition font-medium">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-right border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-brand-navy text-white text-xs uppercase tracking-wider font-extrabold">
+                                    <th class="py-4 px-3 text-center w-12">#</th>
+                                    <th class="py-4 px-6" data-ar="وصف البند (Description)" data-en="Description">وصف البند (Description)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="المقاس / القطر" data-en="Size / Diameter">المقاس / القطر</th>
+                                    <th class="py-4 px-6" data-ar="ملاحظات (Remarks)" data-en="Remarks">ملاحظات (Remarks)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الكمية" data-en="Qty">الكمية</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الوحدة" data-en="Unit">الوحدة</th>
+                                    <th class="py-4 px-4 text-center" data-ar="سعر الوحدة (SAR)" data-en="Unit Price (SAR)">سعر الوحدة (SAR)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الإجمالي (SAR)" data-en="Total Price (SAR)">الإجمالي (SAR)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBodySheet1" class="divide-y divide-gray-100"></tbody>
+                            <tfoot>
+                                <tr class="bg-gray-50 font-black text-gray-900 border-t-2 border-brand-navy">
+                                    <td colspan="7" class="py-4 px-6 text-left" data-ar="إجمالي القسم الأول:" data-en="Section 1 Total:">إجمالي القسم الأول:</td>
+                                    <td id="totalSheet1" class="py-4 px-4 text-center font-en text-brand-navy text-base font-black">885,523.13 SAR</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUOTATION SHEET 2: Wires & Cables -->
+            <section id="tab-q-sheet2" class="space-y-6 hidden animate__animated animate__fadeIn">
+                <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-card-hover border border-gray-100 flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h3 class="text-lg font-black text-gray-900" data-ar="2. جدول الأسلاك، كابلات التيار الخفيف والإنذار، والملحقات" data-en="2. Wires, Low Current & Fire Alarm Cables, Connectors">2. جدول الأسلاك، كابلات التيار الخفيف والإنذار، والملحقات</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">Sheraton Hotel Project, Al Khobar – First Fix Material (Electrical) – Eng. Hany approved</p>
+                    </div>
+                    <div class="relative w-full lg:w-80">
+                        <i class="fa-solid fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="searchSheet2" oninput="filterTable('sheet2')" placeholder="بحث في الوصف، المقاس، أو الملاحظات..." class="w-full pr-11 pl-4 py-2.5 bg-gray-50 border border-gray-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy transition font-medium">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-right border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-brand-navy text-white text-xs uppercase tracking-wider font-extrabold">
+                                    <th class="py-4 px-3 text-center w-12">#</th>
+                                    <th class="py-4 px-6" data-ar="وصف البند (Description)" data-en="Description">وصف البند (Description)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="المقاس / القطر" data-en="Size / Diameter">المقاس / القطر</th>
+                                    <th class="py-4 px-6" data-ar="ملاحظات (Remarks)" data-en="Remarks">ملاحظات (Remarks)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الكمية" data-en="Qty">الكمية</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الوحدة" data-en="Unit">الوحدة</th>
+                                    <th class="py-4 px-4 text-center" data-ar="سعر الوحدة (SAR)" data-en="Unit Price (SAR)">سعر الوحدة (SAR)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الإجمالي (SAR)" data-en="Total Price (SAR)">الإجمالي (SAR)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBodySheet2" class="divide-y divide-gray-100"></tbody>
+                            <tfoot>
+                                <tr class="bg-gray-50 font-black text-gray-900 border-t-2 border-brand-navy">
+                                    <td colspan="7" class="py-4 px-6 text-left" data-ar="إجمالي القسم الثاني:" data-en="Section 2 Total:">إجمالي القسم الثاني:</td>
+                                    <td id="totalSheet2" class="py-4 px-4 text-center font-en text-emerald-600 text-base font-black">2,435,570.92 SAR</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUOTATION SHEET 3: Cable Trays & Trunking -->
+            <section id="tab-q-sheet3" class="space-y-6 hidden animate__animated animate__fadeIn">
+                <div class="bg-white p-4 sm:p-6 rounded-3xl shadow-card-hover border border-gray-100 flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h3 class="text-lg font-black text-gray-900" data-ar="3. صواني الكابلات وترنكات الكابلات مجلفنة بالغمس الساخن مع الدعامات وملحقاتها" data-en="3. Cable Trays & Cable Trunking – HDG c/w Supports & Accessories">3. صواني الكابلات وترنكات الكابلات مجلفنة بالغمس الساخن مع الدعامات وملحقاتها</h3>
+                        <p class="text-xs text-gray-500 mt-0.5">Sheraton Hotel Project, Al Khobar – First Fix Material (Electrical) – Eng. Hany approved</p>
+                    </div>
+                    <div class="relative w-full lg:w-80">
+                        <i class="fa-solid fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="searchSheet3" oninput="filterTable('sheet3')" placeholder="بحث في الوصف، المقاس، أو الملاحظات..." class="w-full pr-11 pl-4 py-2.5 bg-gray-50 border border-gray-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy transition font-medium">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-card-hover border border-gray-100 overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-right border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-brand-navy text-white text-xs uppercase tracking-wider font-extrabold">
+                                    <th class="py-4 px-3 text-center w-12">#</th>
+                                    <th class="py-4 px-6" data-ar="وصف البند (Description)" data-en="Description">وصف البند (Description)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="المقاس / القطر" data-en="Size / Diameter">المقاس / القطر</th>
+                                    <th class="py-4 px-6" data-ar="ملاحظات (Remarks)" data-en="Remarks">ملاحظات (Remarks)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الكمية" data-en="Qty">الكمية</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الوحدة" data-en="Unit">الوحدة</th>
+                                    <th class="py-4 px-4 text-center" data-ar="سعر الوحدة (SAR)" data-en="Unit Price (SAR)">سعر الوحدة (SAR)</th>
+                                    <th class="py-4 px-4 text-center" data-ar="الإجمالي (SAR)" data-en="Total Price (SAR)">الإجمالي (SAR)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBodySheet3" class="divide-y divide-gray-100"></tbody>
+                            <tfoot>
+                                <tr class="bg-gray-50 font-black text-gray-900 border-t-2 border-brand-navy">
+                                    <td colspan="7" class="py-4 px-6 text-left" data-ar="إجمالي القسم الثالث:" data-en="Section 3 Total:">إجمالي القسم الثالث:</td>
+                                    <td id="totalSheet3" class="py-4 px-4 text-center font-en text-blue-600 text-base font-black">1,643,950.96 SAR</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Modal Popup for Compliance Details -->
+    <div id="detailModal" class="fixed inset-0 bg-brand-navy/70 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden opacity-0 transition-all duration-300">
+        <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden transform scale-95 transition-all duration-300 border border-gray-100" id="modalContainer">
+            <div class="bg-gradient-to-r from-brand-navy to-brand-navyLight text-white p-6 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <span id="modalItemNumber" class="w-10 h-10 rounded-2xl bg-brand-gold text-brand-navy font-black flex items-center justify-center text-base font-en shadow-md">1</span>
+                    <div>
+                        <h3 id="modalTitle" class="font-black text-lg">تفاصيل البند والمطابقة الفنية</h3>
+                        <p id="modalStatusBadge" class="text-xs text-amber-200 font-semibold mt-0.5">مطابق للمواصفات الفنية</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-white/80 hover:text-white text-2xl w-10 h-10 flex items-center justify-center rounded-2xl hover:bg-white/15 transition">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+
+            <div class="p-6 sm:p-8 space-y-6 max-h-[75vh] overflow-y-auto text-sm">
+                <div class="p-5 bg-blue-50/50 rounded-2xl border border-blue-100 space-y-2">
+                    <span class="text-xs font-black text-brand-navy uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-file-lines text-brand-gold"></i>
+                        <span data-ar="المواصفة المطلوبة بالمشروع" data-en="Project Requirement">المواصفة المطلوبة بالمشروع</span>
+                    </span>
+                    <p id="modalSpecText" class="text-gray-800 font-bold leading-relaxed text-base"></p>
+                </div>
+
+                <div class="p-5 bg-amber-50/70 rounded-2xl border border-amber-200/80 space-y-2">
+                    <span class="text-xs font-black text-amber-900 uppercase flex items-center gap-2">
+                        <i class="fa-solid fa-box text-amber-600"></i>
+                        <span data-ar="مواصفات المورد المقترحة" data-en="Proposed Supplier Spec">مواصفات المورد المقترحة</span>
+                    </span>
+                    <p id="modalProdText" class="text-gray-800 font-bold leading-relaxed text-base"></p>
+                </div>
+
+                <div class="p-5 bg-emerald-50/80 rounded-2xl border border-emerald-200 space-y-2">
+                    <span class="text-xs font-black text-emerald-900 flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-emerald-600"></i>
+                        <span data-ar="ملاحظات التقييم الفني" data-en="Evaluation Notes">ملاحظات التقييم الفني</span>
+                    </span>
+                    <p id="modalRemarksText" class="text-xs sm:text-sm text-emerald-950 leading-relaxed font-bold"></p>
+                </div>
+            </div>
+
+            <div class="p-5 bg-gray-50 border-t border-gray-100 flex justify-end">
+                <button onclick="closeModal()" class="px-6 py-3 bg-brand-navy hover:bg-brand-navyLight text-white font-bold rounded-2xl text-xs transition shadow-md">
+                    <span data-ar="إغلاق النافذة" data-en="Close">إغلاق النافذة</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navyDark text-white border-t border-brand-gold/20 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-blue-200 space-y-3">
+            <p class="font-bold text-sm text-brand-gold" data-ar="مشروع فندق شيراتون الخبر - التطبيق الموحد للمطابقة الفنية وعروض الأسعار (Division 26)" data-en="Sheraton El Khobar Hotel - Unified MEP Application (Division 26)">مشروع فندق شيراتون الخبر - التطبيق الموحد للمطابقة الفنية وعروض الأسعار (Division 26)</p>
+            <p class="font-en text-gray-400 tracking-wider">Sheraton El Khobar Hotel © 2026 | iCity Solution - Eng. Sherif M. Kamal | Riyadh, Belden, Corning, WESCOSA, Alrouf & Panasonic Systems</p>
+        </div>
+    </footer>
+
+    <!-- Combined JavaScript Data and Logic -->
+    <script>
+        // Data for Compliance Matrix
+        const combinedMatrixData = [
+            { id: 1, supplier: "WESCOSA", reqAr: "صواني كابلات فولاذية مجلفنة بالغمس الساخن بعد التصنيع (HDGAF) طبقاً لـ ASTM A123", reqEn: "Perforated Cable Trays, hot-dip galvanized after fabrication (HDGAF) to ASTM A123", specRef: "Sec 2.02", code: "ST4CB-300ST-3V", prodAr: "صواني كابلات WESCOSA نوع بيرفوريتد عرض 300 مم عمق 100 مم HDG", prodEn: "WESCOSA Heavy Duty Cable Tray 300x100mm HDGAF", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق تماماً لمواصفات الجلفنة الساخنة.", remarksEn: "Fully compliant with HDGAF specification." },
+            { id: 2, supplier: "WESCOSA", reqAr: "لوحات وصل وصواني الربط (Splice Plates) متوافقة مع مسامير SS 316", reqEn: "Tray Splice Plates matching tray finish with stainless steel 316 hardware", specRef: "Sec 2.04", code: "STS-S4 W/316 HW", prodAr: "وصلات ربط صواني ويسكوسا مع مسامير وصواميل من الفولاذ المقاوم للصدأ SS 316", prodEn: "WESCOSA Tray Splice Plates with SS 316 Hardware", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المطلوب باستخدام مسامير SS 316.", remarksEn: "Exceeds specs by utilizing SS 316 hardware." },
+            { id: 3, supplier: "WESCOSA", reqAr: "قضبان تعليق ملولبة بقطر لا يقل عن M10 ومجلفنة بالغمس الساخن", reqEn: "Threaded rods minimum M10 size, hot-dip galvanized for trapeze hangers", specRef: "Sec 2.05", code: "ATR-M10X3.0-HDG", prodAr: "قضبان تعليق ملولبة WESCOSA قطر M10 بطول 3.0م مجلفنة", prodEn: "WESCOSA All-Threaded Rods M10 x 3.0m HDG", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات القطر والجلفنة.", remarksEn: "Complies with minimum M10 size." },
+            { id: 4, supplier: "WESCOSA", reqAr: "مجموعات صواميل ووردات (Nuts & Washers) مطابقة لقضبان التعليق", reqEn: "Hex nuts and plain washers set matching threaded rods", specRef: "Sec 2.05", code: "N-M10-HDG", prodAr: "صواميل سداسية وووردات مسطحة M10 مجلفنة من ويسكوسا", prodEn: "WESCOSA Hex Nuts & Plain Washers HDG", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمواصفات أدوات التثبيت.", remarksEn: "Fully compliant with fastening requirements." },
+            { id: 5, supplier: "WESCOSA", reqAr: "قنوات تعليق معدنية مشقوقة U-Channel بحد أدنى سمك 2 مم مجلفنة", reqEn: "Perforated U-Channel rail systems with minimum 2mm thickness", specRef: "Sec 2.05", code: "WS-200-3G", prodAr: "قنوات تعليق U-Channel مجلفنة من ويسكوسا بسُمك 2 مم", prodEn: "WESCOSA Perforated U-Channels 2.0mm HDG", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز الحد الأدنى للسمك لمتانة فائقة.", remarksEn: "Exceeds minimum thickness and structural load." },
+            { id: 6, supplier: "WESCOSA", reqAr: "أنكرز تثبيت خرسانية عالية التحمل (Concrete Wedge Anchors)", reqEn: "High capacity concrete expansion / wedge anchors", specRef: "Sec 2.05", code: "WESCOSA Anchors", prodAr: "مرابط ومثبتات خرسانية إسفينية عالية التحمل", prodEn: "WESCOSA Heavy Duty Concrete Wedge Anchors", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمعامل الأمان في الأسقف.", remarksEn: "Complies with safety and tensile load specs." },
+            { id: 7, supplier: "WESCOSA", reqAr: "صواميل ياي مع مسامير ربط على شكل حرف T أو مربعة", reqEn: "Spring nuts complete with carriage bolts for channel framing", specRef: "Sec 2.05", code: "RHB-M6X30", prodAr: "صواميل ياي WESCOSA مع مسامير ربط مقاس M6x30", prodEn: "WESCOSA Spring Nuts with Carriage Bolts M6x30", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات التثبيت السريع.", remarksEn: "Fully compliant for channel attachments." },
+            { id: 8, supplier: "WESCOSA", reqAr: "وصلات تمدد للصواني (Tray Expansion Joints) للتعويض الحراري", reqEn: "Cable tray expansion joints to accommodate thermal movement", specRef: "Sec 3.01", code: "STS-100-EX", prodAr: "وصلات تمدد حراري لصواني الكابلات WESCOSA", prodEn: "WESCOSA Cable Tray Expansion Joints", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المواصفة بتركيب وصلات تمدد متخصصة.", remarksEn: "Exceeds specs by providing engineered expansion fittings." },
+            { id: 9, supplier: "WESCOSA", reqAr: "غطاء نهايات الصواني (Tray End Caps) لحماية الكابلات", reqEn: "Tray end caps for clean termination and protection", specRef: "Sec 3.01", code: "SBE-300-100", prodAr: "قطع إغلاق نهايات صواني الكابلات مقاس 300×100 مم", prodEn: "WESCOSA Cable Tray End Caps 300x100mm", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات التشطيب النهائي.", remarksEn: "Complies with clean finish requirements." },
+            { id: 10, supplier: "WESCOSA", reqAr: "أحزمة توصيل وتأريض للصلات (Earth Bonding Straps)", reqEn: "Flexible copper or braided galvanized earth bonding straps", specRef: "Sec 2.10", code: "CBJ-25YG", prodAr: "أحزمة توصيل أرضي مرنة ويسكوسا لاستمرارية التأريض", prodEn: "WESCOSA Flexible Earth Bonding Straps CBJ-25YG", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المطلوب بتأكيد التأريض 100%.", remarksEn: "Exceeds specs ensuring 100% electrical continuity." },
+            { id: 11, supplier: "WESCOSA", reqAr: "ترنكنغ كابلات معدني مجلفن مع أغطية قابلة للفك", reqEn: "Cable trunking fabricated from galvanized steel with covers", specRef: "Sec 2.06", code: "SR4B-200ST-3", prodAr: "ترنكنغ كابلات ويسكوسا مغلق مع غطاء قابل للفك 200مم", prodEn: "WESCOSA Cable Trunking with cover 200mm HDG", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمواصفات الترنكنغ المغلق.", remarksEn: "Fully compliant with enclosure specifications." },
+            { id: 12, supplier: "WESCOSA", reqAr: "وصلات ربط الترنكنغ (Trunking Splice Plates) بمسامير SS 316", reqEn: "Trunking splice plates with secure stainless steel hardware", specRef: "Sec 2.06", code: "STS-S4 W/316 HW", prodAr: "وصلات ربط الترنكنغ مع مسامير SS 316 عالية المتانة", prodEn: "WESCOSA Trunking Splice Plates with SS 316 Hardware", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمواصفات التثبيت بمتانة عالية.", remarksEn: "Complies with robust trunking alignment." },
+            { id: 13, supplier: "ALROUF", reqAr: "أنابيب فولاذية مجلفنة بغمس ساخن (Hot-Dip Galvanized GI Conduits)", reqEn: "Hot-Dip Galvanized Steel Conduits with protective coatings", specRef: "p. 42", code: "Alrouf GI Pipe", prodAr: "أنابيب GI صلبة من العروف مجلفنة بالغمس الساخن", prodEn: "Alrouf Hot-Dip Galvanized GI Conduits", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق تماماً لمواصفات الجلفنة الساخنة.", remarksEn: "Fully compliant with hot-dip galvanizing." },
+            { id: 14, supplier: "ALROUF", reqAr: "أنابيب PVC صلبة وعالية المقاومة للاشتعال للتركيبات المخفية", reqEn: "Rigid heavy-duty PVC conduits for concealed installations", specRef: "p. 42", code: "Alrouf PVC Pipe", prodAr: "أنابيب PVC صلبة من العروف مقاومة للضغط والحرائق", prodEn: "Alrouf Heavy-Duty Rigid PVC Conduits", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للتركيبات المخفية.", remarksEn: "Complies with concealed installation standards." },
+            { id: 15, supplier: "ALROUF", reqAr: "أنابيب مرنة مانعة للسوائل (Liquid-tight Flexible Conduits)", reqEn: "Liquid-tight flexible metal conduits for equipment", specRef: "p. 42", code: "Alrouf Flex Pipe", prodAr: "أنابيب معدنية مرنة مع غلاف PVC عازل من العروف", prodEn: "Alrouf Liquid-Tight Flexible Steel Conduits", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للاهتزازات والرطوبة.", remarksEn: "Complies with flexible connection specs." },
+            { id: 16, supplier: "ALROUF", reqAr: "علب توصيل وسحب فولاذية (Junction Boxes) بسُمك 1.5 مم", reqEn: "Steel junction and pull boxes with minimum 1.5mm thickness", specRef: "p. 42", code: "Alrouf J-Box", prodAr: "علب سحب وتوصيل فولاذية من العروف بسُمك 1.5مم إلى 2مم", prodEn: "Alrouf Galvanized Steel Junction Boxes 1.5/2.0mm", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز الحد الأدنى للسمك بمتانة عالية.", remarksEn: "Exceeds minimum thickness." },
+            { id: 17, supplier: "ALROUF", reqAr: "أغطية علب التوصيل مع براغي SS وطرف أرضي نحاسي", reqEn: "Junction box covers with SS screws and brass earth terminal", specRef: "p. 42", code: "Alrouf J-Cover", prodAr: "أغطية علب العروف مع براغي من الفولاذ المقاوم للصدأ وطرف نحاسي", prodEn: "Alrouf Box Covers with SS screws & brass terminal", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لتأمين التأريض.", remarksEn: "Fully compliant with hardware specs." },
+            { id: 18, supplier: "ALROUF", reqAr: "وصلات ربط الأنابيب الفولاذية (GI Conduit Couplings) المحكمة", reqEn: "Concrete-tight steel conduit couplings", specRef: "p. 42", code: "Alrouf Couplings", prodAr: "وصلات ربط فولاذية مجلفنة محكمة الخرسانة من العروف", prodEn: "Alrouf Steel Conduit Couplings concrete-tight", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للوصلات ضد تسرب الخرسانة.", remarksEn: "Complies with concrete-tight coupling." },
+            { id: 19, supplier: "ALROUF", reqAr: "جانات وحلقات حماية عازلة للمشارف (Insulated Bushings)", reqEn: "Insulated bushings and throat adapters", specRef: "p. 42", code: "Alrouf Bushings", prodAr: "حلقات حماية عازلة من العروف لمشارف الأنابيب", prodEn: "Alrouf Insulated Bushings and connectors", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لحماية الأسلاك من الحواف الحادة.", remarksEn: "Complies with wire insulation protection." },
+            { id: 20, supplier: "ALROUF", reqAr: "الحد الأدنى لقطر الأنابيب في المشروع (20 مم / 3/4 بوصة)", reqEn: "Minimum conduit size requirement (20mm / 3/4'')", specRef: "p. 45", code: "Alrouf 20mm Min", prodAr: "أنابيب العروف بمقاسات تبدأ من 20 مم فما فوق", prodEn: "Alrouf Conduits from 20mm (3/4'') minimum size", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات القطر الأدنى.", remarksEn: "Meets minimum size requirements." },
+            { id: 21, supplier: "ALROUF", reqAr: "المسافات الفاصلة لتدعيم الأنابيب والمسارات (Table 1)", reqEn: "Support spacing compliance for raceways", specRef: "p. 39", code: "Alrouf Support Spacing", prodAr: "أنابيب وقنوات العروف مطابقة لفواصل التدعيم 1.5م إلى 2.5م", prodEn: "Alrouf conduit lengths align with support intervals", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لجدول فواصل التدعيم.", remarksEn: "Complies with specified support spacing." },
+            { id: 22, supplier: "ALROUF", reqAr: "قنوات تعليق معدنية مشقوقة U-Channel بحد أدنى سمك 2 مم", reqEn: "Perforated U-Channel rail systems with minimum 2mm thickness", specRef: "p. 35", code: "Alrouf U-Channel", prodAr: "قنوات تعليق U-Channel مجلفنة من العروف بسُمك 2 مم", prodEn: "Alrouf Perforated U-Channels 2.0mm thickness", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المواصفة بتركيب قنوات سميكة.", remarksEn: "Exceeds specs by offering high-capacity channels." },
+            { id: 23, supplier: "ALROUF", reqAr: "قضبان تعليق ملولبة بقطر لا يقل عن M10 ومجلفنة", reqEn: "Threaded rods minimum M10 size, hot-dip galvanized", specRef: "p. 35", code: "Alrouf M10 Rods", prodAr: "قضبان تعليق ملولبة M10 مجلفنة بالغمس الساخن من العروف", prodEn: "Alrouf All-Threaded Rods M10 size HDG", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لقطر والجلفنة الساخنة.", remarksEn: "Complies with M10 diameter and HDG." },
+            { id: 24, supplier: "ALROUF", reqAr: "مرابط تثبيت الأنابيب (Stirrup Clamps / Conduit Clamps)", reqEn: "Hot-dip galvanized conduit clamps and stirrup straps", specRef: "p. 35", code: "Alrouf Clamps", prodAr: "مرابط تثبيت أنابيب مجلفنة من العروف مطابقة للأبعاد", prodEn: "Alrouf Galvanized Conduit Clamps and Straps", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للتثبيت المحكم للأنابيب.", remarksEn: "Complies with rigid conduit mounting." },
+            { id: 25, supplier: "ALROUF", reqAr: "أنكرز تثبيت خرسانية عالية التحمل (Wedge Anchors)", reqEn: "High capacity concrete expansion / wedge anchors", specRef: "p. 35", code: "Alrouf Anchors", prodAr: "مرابط أنكرز خرسانية إسفينية عالية التحمل من العروف", prodEn: "Alrouf Heavy Duty Concrete Wedge Anchors", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمعامل الأمان بالأسقف.", remarksEn: "Complies with structural safety standards." },
+            { id: 26, supplier: "ALROUF", reqAr: "اختبار السحب بالكرة (Mandrel Pull Test) لخلو الأنابيب", reqEn: "Mandrel pull test capability for clean internal bore", specRef: "p. 45", code: "Alrouf Mandrel Test", prodAr: "دقة التصنيع واللحام الداخلي الأملس لأنابيب العروف", prodEn: "Alrouf internal weld smoothness for mandrel test", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "يضمن نجاح اختبار الكرة وسلامة الأسلاك.", remarksEn: "Ensures clean interior bore for testing." },
+            { id: 27, supplier: "ALROUF", reqAr: "دعم الأنابيب القريبة من صناديق التوصيل بمسافة لا تزيد عن 300 مم", reqEn: "Support raceways within 300mm of junction boxes", specRef: "p. 37", code: "Alrouf Box Support", prodAr: "ملحقات التركيب من العروف تثبت الأنابيب ضمن 300 مم", prodEn: "Alrouf accessories allow support within 300mm", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للمسافة القياسية القريبة.", remarksEn: "Complies with maximum 300mm distance." },
+            { id: 28, supplier: "ALROUF", reqAr: "الوسم المصنعي المستمر وعلامات الجودة على الأنابيب والعلب", reqEn: "Continuous factory stamping and quality marking", specRef: "p. 42", code: "Alrouf Stamping", prodAr: "وسم وطباعة مصنعية مستمرة على منتجات العروف", prodEn: "Alrouf continuous factory stamping and markings", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات التمييز المصنعي.", remarksEn: "Fully complies with product marking specs." },
+            { id: 29, supplier: "ALROUF", reqAr: "توافق الملحقات والقطع الخاصة مع نفس المصنّع المعتمد", reqEn: "Full compatibility of fittings with approved manufacturer", specRef: "p. 42", code: "Alrouf System Match", prodAr: "جميع ملحقات العروف متوافقة هندسياً كوحدة متكاملة", prodEn: "All Alrouf accessories tested and compatible", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لتوريد منظومة متكاملة واحدة.", remarksEn: "Complies with single-source compatibility." },
+            { id: 30, supplier: "PANASONIC", specRef: "p. 42", code: "DWE01ZY to 400Y", reqAr: "أنابيب EMT فولاذية مجلفنة بالتغبيس الساخن خارجيًا مع طلاء بوليمر أورجانيك داخلي عازل للتآكل", reqEn: "EMT conduits heavy-grade steel, hot-dip galvanized outside with organic polymer inside coating", prodAr: "أنابيب Panasonic EMT عالية الجودة، مجلفنة بالتغبيس الساخن خارجيًا ومطليّة داخليًا بطلاء أورجانيك بوليمري خفيف السحب", prodEn: "Panasonic EMT Conduits (UL 797 Listed)", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق بالكامل لمتطلبات الجلفنة والطلاء الداخلي ومعتمد من UL.", remarksEn: "Fully compliant with galvanizing and internal coating requirements." },
+            { id: 31, supplier: "PANASONIC", specRef: "p. 42", code: "UL 797 / E-44051", reqAr: "المطابقة للمواصفات الأمريكية القياسية UL 797 و ANSI C80.3", reqEn: "Compliance with UL 797 & ANSI C80.3 standards", prodAr: "المنتج مدرج وموثق رسمياً في قوائم UL تحت رقم الملف E-44051", prodEn: "UL 797 Listed (File No. E-44051)", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للمواصفات القياسية الأمريكية المطلوبة.", remarksEn: "Complies with required American standards with valid UL listing." },
+            { id: 32, supplier: "PANASONIC", specRef: "p. 42", code: "1/2'' to 4'' (3.05m)", reqAr: "توفر الأحجام القياسية من 1/2 بوصة حتى 4 بوصة بأسماك جدران وأطوال محددة", reqEn: "Availability of standard sizes from 1/2'' to 4'' with specified wall thickness", prodAr: "متوفر بجميع المقاسات من 1/2 بوصة حتى 4 بوصة بطول قياسي 3,048 مم", prodEn: "EMT sizes available from 1/2'' up to 4''", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "تغطي كافة الأقطار المطلوبة في المخططات الكهربائية للمشروع.", remarksEn: "Covers all diameters required in the project drawings." },
+            { id: 33, supplier: "PANASONIC", specRef: "p. 42", code: "Factory Bends", reqAr: "توفير انحناءات وأكواع مصنعية جاهزة (Factory-made bends)", reqEn: "Provision of factory-made bends and elbows", prodAr: "يوفر الكتالوج أكواع وانحناءات EMT مصنعية جاهزة بالكامل", prodEn: "Panasonic supplies factory-made EMT elbows / bends", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لشرط توفير انحناءات مصنعية جاهزة للمشروع.", remarksEn: "Complies with factory-made elbows requirement." },
+            { id: 34, supplier: "PANASONIC", specRef: "p. 42", code: "DSE Set-Screw", reqAr: "وصلات ربط فولاذية بنظام البرغي (Set-Screw Couplings)", reqEn: "Steel set-screw couplings for EMT pipe connection", prodAr: "وصلات تثبيت فولاذية بنظام مسامير الربط معتمدة UL 514B", prodEn: "Panasonic EMT Coupling - Set Screw type (Steel), UL Listed", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "وصلات فولاذية معتمدة من UL بنظام البرغي.", remarksEn: "UL-listed steel set-screw couplings." },
+            { id: 35, supplier: "PANASONIC", specRef: "p. 42", code: "DFM Insulated", reqAr: "روابط صناديق فولاذية مع حواف عازلة (Set-Screw Connectors with Insulated Throats)", reqEn: "Steel set-screw connectors with insulated throats for box termination", prodAr: "روابط بانسونيك الفولاذية المعتمدة المزودة بحلقات حماية عازلة", prodEn: "Panasonic EMT Connector with insulated throat options", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المطلوب بتوفير حلقات حماية عازلة ممتازة لحماية الأسلاك.", remarksEn: "Exceeds requirements by providing insulated throat connectors." },
+            { id: 36, supplier: "PANASONIC", specRef: "p. 42", code: "Compression Tight", reqAr: "مانع تسرب الخرسانة للوصلات والروابط عند الصب (Concrete Tightness)", reqEn: "Concrete-tight couplings & connectors for embedded slab runs", prodAr: "توفر بانسونيك خيارات الوصلات الضغطية المعتمدة كـ Concrete Tight", prodEn: "Panasonic EMT Compression type Couplings & Connectors", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المطلوب بتوفير نوعيات التثبيت الضغطية المحكمة.", remarksEn: "Exceeds specs by offering high-grade compression fittings." },
+            { id: 37, supplier: "PANASONIC", specRef: "p. 42", code: "CYK Bushings", reqAr: "حماية مشارف التوصيل وحواف الأسلاك (Insulated Throats / Bushings)", reqEn: "Smooth rounded insulated throats & bushings for terminating ends", prodAr: "مشارف التوصيل مصممة بحواف دائرية ملساء مع خيار البوشنج العازل", prodEn: "Panasonic Connectors feature smooth rounded insulated throats", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لشرط العزل الداخلي لحماية حواف الكابلات.", remarksEn: "Complies with cable edge protection requirements." },
+            { id: 38, supplier: "PANASONIC", specRef: "p. 47", code: "Exposed / Plenum", reqAr: "مجالات الاستخدام (الأسقف المستعارة، الغرف الكهربائية، مسارات إنذار الحريق والأمن)", reqEn: "Application scope (false ceilings, electrical rooms, fire alarm & security systems)", prodAr: "أنابيب Panasonic EMT مصممة للتركيبات الظاهرة والتجاويد والأسقف المستعارة", prodEn: "Panasonic EMT conduits fully meet standard mechanical duty", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لتطبيقات الاستخدام المحددة بالمواصفات.", remarksEn: "Complies with specified installation application scope." },
+            { id: 39, supplier: "PANASONIC", specRef: "p. 39", code: "Table 1 Spacing", reqAr: "المسافات الفاصلة لتدعيم الأنابيب (Support Spacing - Table 1)", reqEn: "Support spacing compliance (1.5m to 2.5m as per Table 1)", prodAr: "طول الأنبوب القياسي 3.048 متر متوافق مع فواصل التدعيم المطلوبة", prodEn: "Panasonic EMT pipes supplied in standard lengths, adaptable to spacing", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "طول الأنبوب القياسي يسهل التثبيت عند الفواصل المطلوبة.", remarksEn: "Standard pipe length aligns seamlessly with support intervals." },
+            { id: 40, supplier: "PANASONIC", specRef: "p. 35", code: "U-Channel Match", reqAr: "التوافق مع أنظمة التعليق والأنكرز (Clevis, Straps, U-Channels)", reqEn: "Compatibility with structural support systems & hangers", prodAr: "الأبعاد الخارجية القياسية للمواسير تتوافق 100% مع الكلبسات وقنوات U-Channel", prodEn: "Standard outside diameters match standard galvanized straps", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "الأبعاد الخارجيّة مطابقة للمقاييس القياسية.", remarksEn: "Outer dimensions strictly comply with standard support accessories." },
+            { id: 41, supplier: "PANASONIC", specRef: "p. 42", code: "Compression Opt", reqAr: "إتاحة وصلات التثبيت الضغطي (Compression Fittings Option)", reqEn: "Option for compression couplings and connectors", prodAr: "تتوفر خيارات ضغطية محكمة المعايير مع حواف عازلة", prodEn: "Panasonic offers Compression Couplings and Connectors", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المواصفة الأساسية بإتاحة خيار التثبيت الضغطي المحكم.", remarksEn: "Exceeds specs by offering compression options." },
+            { id: 42, supplier: "PANASONIC", specRef: "p. 45", code: "Min Size 20mm", reqAr: "الحد الأدنى لقطر الأنابيب في المشروع (Minimum Size 20mm / 3/4'')", reqEn: "Minimum conduit size requirement (20mm / 3/4'' for branch circuits)", prodAr: "تتوفر المقاسات بداية من 1/2 بوصة و 3/4 بوصة وتفي بكافة المخططات", prodEn: "Panasonic provides EMT starting from 1/2'' and 3/4'' up to 4''", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "متوفر بالأحجام القياسية المطلوبة في الدوائر الفرعية.", remarksEn: "Meets minimum size requirements for branch and feeder circuits." },
+            { id: 43, supplier: "PANASONIC", specRef: "p. 45", code: "Mandrel Test", reqAr: "استواء السطح الداخلي واختبار السحب (Mandrel Pull Test)", reqEn: "Smooth internal surface & mandrel pull test capability", prodAr: "دقة التصنيع والطلاء البوليمري الداخلي تضمن خلو الأنابيب من أي نتوءات", prodEn: "Panasonic high-precision manufacturing guarantees smooth internal surface", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "جودة التصنيع تضمن خلو السطح الداخلي ونجاح اختبار الماندرل.", remarksEn: "High manufacturing standard guarantees smooth mandrel test results." },
+            { id: 44, supplier: "PANASONIC", specRef: "p. 61", code: "Stamping / UL", reqAr: "التمييز والوسم المصنعي المستمر (Factory Stamping & Identification)", reqEn: "Continuous factory marking & identification listing", prodAr: "طباعة ووسم مصنعي مستمر على طول الأنبوب يوضح المصنع ورقم الاعتماد UL", prodEn: "Continuous factory stamping including Panasonic logo and UL mark", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات التمييز وتحديد المنشأ على جسم المنتج.", remarksEn: "Fully complies with electrical identification and product marking." },
+            { id: 45, supplier: "RIYADH/BELDEN", specRef: "p. 18", code: "Belden 79002FS", reqAr: "كابلات إنذار الحريق المعزولة والمحمية مع درع حماية للتداخلات", reqEn: "Shielded twisted copper pair/triple cables for fire alarm loops", prodAr: "بيلدين (Belden 79002FS) كابل إنذار حريق عالي الأداء مع درع حماية", prodEn: "Belden 79002FS High-Performance Fire Alarm Cable", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق بالكامل لمتطلبات حماية كابلات إنذار الحريق.", remarksEn: "Fully compliant with fire alarm shielding." },
+            { id: 46, supplier: "RIYADH/BELDEN", specRef: "p. 12", code: "Corning Cat 6A", reqAr: "كابلات الفئة السادسة أ (Cat 6A U/UTP) لنطاق تردد لا يقل عن 250 ميجاهرتز", reqEn: "Category 6A U/UTP structured cabling supporting min 250 MHz", prodAr: "كورنينج (Corning FutureCom Cat 6A U/UTP) بنطاق تردد 500 ميجاهرتز", prodEn: "Corning FutureCom Cat 6A U/UTP supporting 500 MHz", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المواصفة المطلوبة بدعم نطاق تردد 500 ميجاهرتز.", remarksEn: "Exceeds spec by supporting 500 MHz bandwidth." },
+            { id: 47, supplier: "RIYADH/BELDEN", specRef: "p. 11", code: "HO7V-U/R/K", reqAr: "أسلاك التمديدات المعزولة PVC للوحات والقنوات", reqEn: "PVC insulated solid/stranded building wires for conduits", prodAr: "كابلات الرياض (Riyadh Cables HO7V-U / HO7V-R / HO7V-K) بمعيار IEC 60227", prodEn: "Riyadh Cables HO7V conforming to IEC 60227", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للمعايير القياسية للتمديدات الداخلية.", remarksEn: "Complies with standard building wire requirements." },
+            { id: 48, supplier: "RIYADH/BELDEN", specRef: "p. 11", code: "XLPE/PVC 0.6/1kV", reqAr: "كابلات قوى معزولة XLPE جهد 0.6/1 كيلوفولت متعددة النواة", reqEn: "Multi-core power cables insulated with XLPE and PVC", prodAr: "كابلات الرياض (Riyadh Cables XLPE/PVC 0.6/1kV) مطابقة للمواصفات", prodEn: "Riyadh Cables XLPE/PVC 0.6/1kV conforming to standards", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات كابلات التغذية الرئيسية والعزل الحراري.", remarksEn: "Fully compliant with main power feeder specifications." },
+            { id: 49, supplier: "RIYADH/BELDEN", specRef: "p. 12", code: "HO5VV-F", reqAr: "كابلات مرنة دائرية لتوصيل المعدات والأجهزة (HO5VV-F)", reqEn: "Circular flexible cords with PVC insulation for appliances", prodAr: "كابلات الرياض (Riyadh Cables HO5VV-F) مرنة ومقاومة", prodEn: "Riyadh Cables HO5VV-F flexible cords for movable equipment", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات التوصيلات المرنة للأجهزة.", remarksEn: "Complies with flexible cord specifications." },
+            { id: 50, supplier: "RIYADH/BELDEN", specRef: "p. 12", code: "THHN/THWN UL 83", reqAr: "أسلاك بناء معزولة مقاومة للحرارة والرطوبة للتمديدات العامة", reqEn: "Heat and moisture resistant thermoplastic copper building wires", prodAr: "كابلات الرياض (Riyadh Cables THHN/THWN) مع غلاف نايلون حسب UL 83", prodEn: "Riyadh Cables THHN/THWN with nylon protective jacket per UL 83", status: "HIGHER", statusAr: "أعلى من المطلوب", remarksAr: "يتجاوز المطلوب بتوفير غلاف النايلون الإضافي لحماية فائقة.", remarksEn: "Exceeds specs by providing protective nylon jacket." },
+            { id: 51, supplier: "RIYADH/BELDEN", specRef: "p. 202", code: "BS 1363 SASO", reqAr: "مخارج قوى كهربائية ومفاتيح إنارة بريطانية الصنع معتمدة من SASO (BS 1363)", reqEn: "BS 1363 Type G switched socket outlets approved by SASO", prodAr: "مخارج قوى نوع BS 1363 Type G معتمدة بمواصفات SASO", prodEn: "BS 1363 Type G Sockets fully approved by SASO standards", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات أجهزة التوصيل ومفاتيح القوى ومواصفات SASO.", remarksEn: "Complies with wiring devices and SASO approval." },
+            { id: 52, supplier: "RIYADH/BELDEN", specRef: "p. 201", code: "Steel Boxes", reqAr: "صناديق تمديد معدنية مجلفنة للتركيبات المخفية والظاهرة", reqEn: "Galvanized steel outlet and junction boxes for wiring", prodAr: "صناديق تمديد مجلفنة مطابقة للمواصفات الهندسية للمشروع", prodEn: "Galvanized steel boxes complying with project specifications", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق للمواصفات الخاصة بصناديق التوصيل ومخارج الإنارة.", remarksEn: "Complies with junction and outlet box specifications." },
+            { id: 53, supplier: "RIYADH/BELDEN", specRef: "p. 85", code: "Flame Retardant", reqAr: "أنظمة وقنوات التمديد البلاستيكية والمعدنية المقاومة للحريق", reqEn: "Conduits and cable management systems flame retardant", prodAr: "أنابيب وقنوات تمديد مطابقة للمواصفات ومقاومة لانتشار الحريق", prodEn: "Conduits and trunking fully compliant with fire safety", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات قنوات وحماية التمديدات الكهربائية.", remarksEn: "Complies with raceway and conduit protection requirements." },
+            { id: 54, supplier: "RIYADH/BELDEN", specRef: "p. 68", code: "Testing 26 0800", reqAr: "اختبارات العزل الفحص والشامل (Section 26 0800 Testing & Commissioning)", reqEn: "Electrical testing including Megger insulation resistance", prodAr: "برنامج اختبار متكامل وتوثيق النتائج حسب القسم 26 0800", prodEn: "Complete testing protocol and commissioning per Section 26 0800", status: "COMPLIANT", statusAr: "مطابق", remarksAr: "مطابق لمتطلبات الفحص والاختبار والتكليف الفني.", remarksEn: "Complies with testing and commissioning standards." }
+        ];
+
+        // Data for Electrical Quotation
+        const quotationData = {
+            "01-Conduits & Boxes": [
+                {no: 1, description: "EMT Conduit – Exposed", size: "3/4\" (20 mm)", remarks: "", qty: 53023.0, unit: "m", unitPrice: 6.936, totalPrice: 367767.528},
+                {no: 2, description: "EMT Adaptor – Screw Type", size: "3/4\" (20 mm)", remarks: "", qty: 5108.0, unit: "pcs", unitPrice: 1.13288, totalPrice: 5786.75104},
+                {no: 3, description: "EMT Coupling – Screw Type", size: "3/4\" (20 mm)", remarks: "", qty: 17759.0, unit: "pcs", unitPrice: 1.13288, totalPrice: 20118.81592},
+                {no: 4, description: "EMT Saddle – One Hole c/w Screws & Plastic Fisher (Wall Plug)", size: "3/4\" (20 mm)", remarks: "", qty: 53023.0, unit: "pcs", unitPrice: 0.18496, totalPrice: 9807.13408},
+                {no: 5, description: "PVC Conduit – Medium Duty", size: "Ø25 mm", remarks: "", qty: 16280.0, unit: "m", unitPrice: 1.734, totalPrice: 28229.52},
+                {no: 6, description: "PVC Adaptor", size: "Ø25 mm", remarks: "", qty: 5832.0, unit: "pcs", unitPrice: 1.445, totalPrice: 8427.24},
+                {no: 7, description: "PVC Coupling", size: "Ø25 mm", remarks: "", qty: 5328.0, unit: "pcs", unitPrice: 0.578, totalPrice: 3079.584},
+                {no: 8, description: "PVC Cement Glue", size: "1/4 kg", remarks: "", qty: 30.0, unit: "pcs", unitPrice: 91.7286, totalPrice: 2751.858},
+                {no: 9, description: "Flexible Conduit – Liquid-Tight", size: "3/4\" (20 mm)", remarks: "", qty: 2640.0, unit: "m", unitPrice: 13.872, totalPrice: 36622.08},
+                {no: 10, description: "Liquid-Tight Flexible Conduit Adaptor", size: "3/4\" (20 mm)", remarks: "", qty: 2640.0, unit: "pcs", unitPrice: 5.78, totalPrice: 15259.2},
+                {no: 11, description: "EMT Flexible Conduit", size: "3/4\" (20 mm)", remarks: "", qty: 21723.0, unit: "m", unitPrice: 11.56, totalPrice: 251117.88},
+                {no: 12, description: "Flexible Conduit Adaptor", size: "3/4\" (20 mm)", remarks: "", qty: 50989.0, unit: "pcs", unitPrice: 1.86116, totalPrice: 94898.68724},
+                {no: 13, description: "Extension Box Square – Galv. c/w Earthing Terminal & Cover", size: "4\" x 4\" x 38 mm", remarks: "Embedded circuit to exposed home run", qty: 917.0, unit: "pcs", unitPrice: 3.91884, totalPrice: 3593.57628},
+                {no: 14, description: "Pull Box Square – Galv. c/w Earthing Terminal & Cover", size: "4\" x 4\" x 38 mm", remarks: "3/4\" knock-out", qty: 7166.0, unit: "pcs", unitPrice: 3.91884, totalPrice: 28082.40744},
+                {no: 15, description: "HDG Back Box 1-Gang – Embedded", size: "70 x 70 x 47 mm", remarks: "3/4\" knock-out", qty: 5149.0, unit: "pcs", unitPrice: 1.59528, totalPrice: 8214.09672},
+                {no: 16, description: "HDG Back Box 2-Gang – Embedded", size: "140 x 70 x 47 mm", remarks: "3/4\" knock-out", qty: 390.0, unit: "pcs", unitPrice: 3.45644, totalPrice: 1348.0116},
+                {no: 17, description: "Back Box", size: "5 x 10 cm", remarks: "", qty: 150.0, unit: "pcs", unitPrice: 2.79174, totalPrice: 418.761}
+            ],
+            "02-Wires & Cables": [
+                {no: 1, description: "Single Core Wire – Lighting (R, Y, B, BK, YG)", size: "2.5 mm²", remarks: "BK & YG = 3 times", qty: 296306.0, unit: "m", unitPrice: 1.66464, totalPrice: 493242.81984},
+                {no: 2, description: "Single Core Wire – Power (R, Y, B, BK, YG)", size: "4 mm²", remarks: "BK & YG = 3 times", qty: 402977.0, unit: "m", unitPrice: 2.552448, totalPrice: 1028577.8377},
+                {no: 3, description: "Single Core Wire – Power (R, Y, B, BK, YG)", size: "6 mm²", remarks: "BK & YG = 3 times", qty: 5000.0, unit: "m", unitPrice: 3.9882, totalPrice: 19941.0},
+                {no: 4, description: "Spring Wire Nut Connector", size: "2.5 mm²", remarks: "", qty: 5000.0, unit: "pcs", unitPrice: 0.27744, totalPrice: 1387.2},
+                {no: 5, description: "Spring Wire Nut Connector", size: "4 mm²", remarks: "", qty: 10000.0, unit: "pcs", unitPrice: 0.27744, totalPrice: 2774.4},
+                {no: 6, description: "Spring Wire Nut Connector", size: "6 mm²", remarks: "", qty: 1000.0, unit: "pcs", unitPrice: 0.27744, totalPrice: 277.44},
+                {no: 7, description: "Electrical Insulation Tape (R, Y, B, BK, YG)", size: "-", remarks: "Each colour", qty: 150.0, unit: "pcs", unitPrice: 1.7918, totalPrice: 268.77},
+                {no: 8, description: "Cable CAT6A (Data / Camera / PMS)", size: "CAT6A", remarks: "", qty: 125667.0, unit: "m", unitPrice: 2.5432, totalPrice: 319596.3144},
+                {no: 9, description: "Fire Alarm Cable – Shielded, Fire Rated 950°C", size: "2 x 1.5 mm²", remarks: "", qty: 30195.0, unit: "m", unitPrice: 10.8086, totalPrice: 326365.677},
+                {no: 10, description: "Evacuation Cable – Shielded, Fire Rated 950°C", size: "2 x 2.5 mm²", remarks: "", qty: 22495.0, unit: "m", unitPrice: 10.8086, totalPrice: 243139.457}
+            ],
+            "03-Cable Tray & Trunk": [
+                {no: 1, description: "Cable Tray – HDG", size: "300 x 100 mm", remarks: "Main run", qty: 1260.0, unit: "m", unitPrice: 57.06787, totalPrice: 71905.512},
+                {no: 2, description: "Tray Splice Plate", size: "-", remarks: "For Tray 300x100", qty: 420.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 7748.8992},
+                {no: 3, description: "Threaded Rod", size: "M10", remarks: "For Tray 300x100", qty: 1008.0, unit: "m", unitPrice: 4.93997, totalPrice: 4979.49312},
+                {no: 4, description: "Nuts + Washers Set", size: "M10", remarks: "For Tray 300x100", qty: 5350.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 2659.378},
+                {no: 5, description: "Perforated U-Channel", size: "21 x 21 mm", remarks: "For Tray 300x100", qty: 800.0, unit: "m", unitPrice: 21.19333, totalPrice: 16954.66667},
+                {no: 6, description: "Concrete Anchor", size: "M10", remarks: "For Tray 300x100", qty: 2520.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 4122.0648},
+                {no: 7, description: "Spring Nut c/w Carriage Bolt", size: "M6", remarks: "For Tray 300x100", qty: 2520.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 4122.0648},
+                {no: 8, description: "Tray Expansion Joint", size: "-", remarks: "For Tray 300x100", qty: 20.0, unit: "pcs", unitPrice: 22.03336, totalPrice: 440.6672},
+                {no: 9, description: "Tray End Cap", size: "-", remarks: "For Tray 300x100", qty: 30.0, unit: "pcs", unitPrice: 12.99344, totalPrice: 389.8032},
+                {no: 10, description: "Tray Joint Earth Bonding Strap", size: "-", remarks: "For Tray 300x100", qty: 420.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 6073.8552},
+                {no: 11, description: "Cable Trunk – HDG c/w Cover", size: "200 x 100 mm", remarks: "Main run", qty: 1120.0, unit: "m", unitPrice: 75.70259, totalPrice: 84786.89707},
+                {no: 12, description: "Trunk Splice Plate", size: "-", remarks: "For Trunk 200x100", qty: 400.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 7379.904},
+                {no: 13, description: "Threaded Rod", size: "M10", remarks: "For Trunk 200x100", qty: 560.0, unit: "m", unitPrice: 4.93997, totalPrice: 2766.38507},
+                {no: 14, description: "Nuts + Washers Set", size: "M10", remarks: "For Trunk 200x100", qty: 6400.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 3181.312},
+                {no: 15, description: "Perforated U-Channel", size: "21 x 21 mm", remarks: "For Trunk 200x100", qty: 640.0, unit: "pcs", unitPrice: 21.19333, totalPrice: 13563.73333},
+                {no: 16, description: "Concrete Anchor", size: "M10", remarks: "For Trunk 200x100", qty: 2008.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 3284.56592},
+                {no: 17, description: "Spring Nut c/w Carriage Bolt", size: "M6", remarks: "For Trunk 200x100", qty: 2008.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 3284.56592},
+                {no: 18, description: "Trunk End Cap", size: "-", remarks: "For Trunk 200x100", qty: 40.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 578.4624},
+                {no: 19, description: "Trunk Joint Earth Bonding Strap", size: "-", remarks: "For Trunk 200x100", qty: 400.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 5784.624},
+                {no: 20, description: "Cable Trunk – HDG c/w Cover", size: "100 x 100 mm", remarks: "Main run", qty: 1120.0, unit: "m", unitPrice: 55.05257, totalPrice: 61658.88213},
+                {no: 21, description: "Trunk Splice Plate", size: "-", remarks: "For Trunk 100x100", qty: 400.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 7379.904},
+                {no: 22, description: "Threaded Rod", size: "M10", remarks: "For Trunk 100x100", qty: 560.0, unit: "m", unitPrice: 4.93997, totalPrice: 2766.38507},
+                {no: 23, description: "Nuts + Washers Set", size: "M10", remarks: "For Trunk 100x100", qty: 5600.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 2783.648},
+                {no: 24, description: "Perforated U-Channel", size: "21 x 21 mm", remarks: "For Trunk 100x100", qty: 640.0, unit: "pcs", unitPrice: 21.19333, totalPrice: 13563.73333},
+                {no: 25, description: "Concrete Anchor", size: "M10", remarks: "For Trunk 100x100", qty: 2008.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 3284.56592},
+                {no: 26, description: "Spring Nut c/w Carriage Bolt", size: "M6", remarks: "For Trunk 100x100", qty: 2008.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 3284.56592},
+                {no: 27, description: "Trunk End Cap", size: "-", remarks: "For Trunk 100x100", qty: 40.0, unit: "pcs", unitPrice: 11.57156, totalPrice: 462.8624},
+                {no: 28, description: "Trunk Joint Earth Bonding Strap", size: "-", remarks: "For Trunk 100x100", qty: 400.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 5784.624},
+                {no: 29, description: "Cable Tray – HDG", size: "150 mm", remarks: "Main run", qty: 5460.0, unit: "m", unitPrice: 40.66808, totalPrice: 222047.7168},
+                {no: 30, description: "Tray Splice Plate", size: "-", remarks: "For Tray 150x100", qty: 2008.0, unit: "pcs", unitPrice: 1.0, totalPrice: 2008.0},
+                {no: 31, description: "Threaded Rod", size: "M10", remarks: "For Tray 150x100", qty: 4816.0, unit: "m", unitPrice: 3.0, totalPrice: 14448.0},
+                {no: 32, description: "Nuts + Washers Set", size: "M10", remarks: "For Tray 150x100", qty: 25036.0, unit: "pcs", unitPrice: 1.0, totalPrice: 25036.0},
+                {no: 33, description: "Perforated U-Channel", size: "21 x 21 mm", remarks: "For Tray 150x100", qty: 2023.0, unit: "m", unitPrice: 21.19333, totalPrice: 42874.11333},
+                {no: 34, description: "Concrete Anchor", size: "M10", remarks: "For Tray 150x100", qty: 12012.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 19648.50888},
+                {no: 35, description: "Spring Nut c/w Carriage Bolt", size: "M6", remarks: "For Tray 150x100", qty: 12012.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 19648.50888},
+                {no: 36, description: "Tray Expansion Joint", size: "-", remarks: "For Tray 150x100", qty: 39.0, unit: "pcs", unitPrice: 22.03336, totalPrice: 859.30104},
+                {no: 37, description: "Tray End Cap", size: "-", remarks: "For Tray 150x100", qty: 78.0, unit: "pcs", unitPrice: 12.17268, totalPrice: 949.46904},
+                {no: 38, description: "Tray Joint Earth Bonding Strap", size: "-", remarks: "For Tray 150x100", qty: 5460.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 78960.1176},
+                {no: 39, description: "Cable Trunk – HDG c/w Cover", size: "200 x 100 mm", remarks: "Main run", qty: 3412.0, unit: "m", unitPrice: 75.70259, totalPrice: 258297.22571},
+                {no: 40, description: "Trunk Splice Plate", size: "-", remarks: "For Trunk 200x100", qty: 1267.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 23375.84592},
+                {no: 41, description: "Threaded Rod", size: "M10", remarks: "For Trunk 200x100", qty: 3003.0, unit: "m", unitPrice: 4.93997, totalPrice: 14834.73992},
+                {no: 42, description: "Nuts + Washers Set", size: "M10", remarks: "For Trunk 200x100", qty: 17060.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 8480.1848},
+                {no: 43, description: "Perforated U-Channel", size: "21 x 21 mm", remarks: "For Trunk 200x100", qty: 1428.0, unit: "m", unitPrice: 14.46156, totalPrice: 20651.10768},
+                {no: 44, description: "Concrete Anchor", size: "M10", remarks: "For Trunk 200x100", qty: 7507.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 12279.50018},
+                {no: 45, description: "Spring Nut c/w Carriage Bolt", size: "M6", remarks: "For Trunk 200x100", qty: 7507.0, unit: "pcs", unitPrice: 21.19333, totalPrice: 159098.35333},
+                {no: 46, description: "Trunk End Cap", size: "-", remarks: "For Trunk 200x100", qty: 78.0, unit: "pcs", unitPrice: 12.75068, totalPrice: 994.55304},
+                {no: 47, description: "Trunk Joint Earth Bonding Strap", size: "-", remarks: "For Trunk 200x100", qty: 1268.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 18337.25808},
+                {no: 48, description: "Cable Trunk – HDG c/w Cover", size: "100 x 100 mm", remarks: "Main run", qty: 3413.0, unit: "m", unitPrice: 55.05257, totalPrice: 187894.43279},
+                {no: 49, description: "Trunk Splice Plate", size: "-", remarks: "For Trunk 100x100", qty: 1268.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 23394.29568},
+                {no: 50, description: "Threaded Rod", size: "M10", remarks: "For Trunk 100x100", qty: 3003.0, unit: "m", unitPrice: 4.93997, totalPrice: 14834.73992},
+                {no: 51, description: "Nuts + Washers Set", size: "M10", remarks: "For Trunk 100x100", qty: 17065.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 8482.6702},
+                {no: 52, description: "C-Channel", size: "41 x 41 mm", remarks: "For Trunk 100x100", qty: 1160.0, unit: "m", unitPrice: 19.93329, totalPrice: 23122.62027},
+                {no: 53, description: "Concrete Anchor", size: "M10", remarks: "For Trunk 100x100", qty: 7508.0, unit: "pcs", unitPrice: 1.63574, totalPrice: 12281.13592},
+                {no: 54, description: "Spring Nut", size: "M10", remarks: "For Trunk 100x100", qty: 7508.0, unit: "pcs", unitPrice: 1.57216, totalPrice: 11803.77728},
+                {no: 55, description: "Trunk Bend", size: "-", remarks: "For Trunk 100x100", qty: 78.0, unit: "pcs", unitPrice: 122.95216, totalPrice: 9590.26848},
+                {no: 56, description: "Trunk Tee", size: "-", remarks: "For Trunk 100x100", qty: 78.0, unit: "pcs", unitPrice: 175.57328, totalPrice: 13694.71584},
+                {no: 57, description: "Trunk End Cap", size: "-", remarks: "For Trunk 100x100", qty: 78.0, unit: "pcs", unitPrice: 11.57156, totalPrice: 902.58168},
+                {no: 58, description: "Trunk Joint Earth Bonding Strap", size: "-", remarks: "For Trunk 100x100", qty: 1268.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 18337.25808},
+                {no: 59, description: "Cable Tray – HDG", size: "600 x 100 mm", remarks: "Main run", qty: 200.0, unit: "m", unitPrice: 83.09713, totalPrice: 16619.42667},
+                {no: 60, description: "Tray Splice Plate", size: "-", remarks: "For Tray 600x100", qty: 70.0, unit: "pcs", unitPrice: 18.44976, totalPrice: 1291.4832},
+                {no: 61, description: "Threaded Rod", size: "M10", remarks: "For Tray 600x100", qty: 160.0, unit: "m", unitPrice: 4.93997, totalPrice: 790.39573},
+                {no: 62, description: "Nuts + Washers Set", size: "M10", remarks: "For Tray 600x100", qty: 1000.0, unit: "pcs", unitPrice: 0.49708, totalPrice: 497.08},
+                {no: 63, description: "Perforated U-Channel", size: "41 x 41 mm", remarks: "For Tray 600x100", qty: 140.0, unit: "m", unitPrice: 21.19333, totalPrice: 2967.06667},
+                {no: 64, description: "Concrete Anchor", size: "M10", remarks: "For Tray 600x100", qty: 200.0, unit: "m", unitPrice: 1.57216, totalPrice: 314.432},
+                {no: 65, description: "Spring Nut", size: "M10", remarks: "For Tray 600x100", qty: 200.0, unit: "pcs", unitPrice: 1.57216, totalPrice: 314.432},
+                {no: 66, description: "Tray Tee", size: "-", remarks: "For Tray 600x100", qty: 10.0, unit: "pcs", unitPrice: 206.38068, totalPrice: 2063.8068},
+                {no: 67, description: "Tray 45° Bend", size: "-", remarks: "For Tray 600x100", qty: 10.0, unit: "pcs", unitPrice: 108.62932, totalPrice: 1086.2932},
+                {no: 68, description: "Tray End Cap", size: "-", remarks: "For Tray 600x100", qty: 5.0, unit: "pcs", unitPrice: 15.7794, totalPrice: 78.897},
+                {no: 69, description: "Tray Joint Earth Bonding Strap", size: "-", remarks: "For Tray 600x100", qty: 200.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 2892.312},
+                {no: 70, description: "Tray Joint Earth Bonding Strap", size: "-", remarks: "Additional", qty: 200.0, unit: "pcs", unitPrice: 14.46156, totalPrice: 2892.312}
+            ]
+        };
+
+        let currentLang = 'ar';
+        let currentActiveView = 'matrix'; // 'matrix' or 'quotation'
+        let currentMatrixTab = 'summary'; // 'summary' or 'matrix'
+        let currentQuotationTab = 'summary'; // 'summary', 'sheet1', 'sheet2', 'sheet3'
+        let currentSystemFilter = 'ALL';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMatrixTable();
+            renderQuotationTables();
+        });
+
+        // Toggle between Matrix View and Quotation View
+        function toggleMasterView() {
+            const matrixView = document.getElementById('view-compliance-matrix');
+            const quotationView = document.getElementById('view-electrical-quotation');
+            const matrixTabs = document.getElementById('matrixTabsNav');
+            const quotationTabs = document.getElementById('quotationTabsNav');
+            const masterBtnText = document.getElementById('masterBtnText');
+            const masterBtnIcon = document.getElementById('masterBtnIcon');
+            const headerSubTitle = document.getElementById('headerSubTitle');
+
+            if (currentActiveView === 'matrix') {
+                // Switch to Quotation View
+                currentActiveView = 'quotation';
+                matrixView.classList.add('hidden');
+                quotationView.classList.remove('hidden');
+                matrixTabs.classList.add('hidden');
+                quotationTabs.classList.remove('hidden');
+
+                if (currentLang === 'ar') {
+                    masterBtnText.textContent = 'العودة إلى جدول المطابقة';
+                    headerSubTitle.textContent = 'عرض سعر المواد الكهربائية - التوريد فقط (Division 26)';
+                } else {
+                    masterBtnText.textContent = 'Back to Compliance Matrix';
+                    headerSubTitle.textContent = 'Electrical First Fix Material Quotation - Supply Only (Division 26)';
+                }
+                masterBtnIcon.className = 'fa-solid fa-table-list';
+                switchQuotationTab('summary');
+            } else {
+                // Switch to Compliance Matrix View
+                currentActiveView = 'matrix';
+                quotationView.classList.add('hidden');
+                matrixView.classList.remove('hidden');
+                quotationTabs.classList.add('hidden');
+                matrixTabs.classList.remove('hidden');
+
+                if (currentLang === 'ar') {
+                    masterBtnText.textContent = 'الذهاب الي عرض السعر';
+                    headerSubTitle.textContent = 'مصفوفة المطابقة الفنية الموحدة الشاملة - أعمال الكهرباء (Division 26)';
+                } else {
+                    masterBtnText.textContent = 'Go to Quotation';
+                    headerSubTitle.textContent = 'Comprehensive Unified Technical Compliance Matrix - Electrical (Division 26)';
+                }
+                masterBtnIcon.className = 'fa-solid fa-file-invoice-dollar';
+                switchMatrixTab('summary');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Switch tabs inside Matrix View
+        function switchMatrixTab(tab) {
+            currentMatrixTab = tab;
+            const summaryTab = document.getElementById('tab-summary');
+            const matrixTab = document.getElementById('tab-matrix');
+            const btnSummary = document.getElementById('tab-summary-btn');
+            const btnMatrix = document.getElementById('tab-matrix-btn');
+
+            if (tab === 'summary') {
+                summaryTab.classList.remove('hidden');
+                matrixTab.classList.add('hidden');
+                btnSummary.className = "py-3 px-6 text-sm font-black border-b-4 border-brand-gold text-brand-gold flex items-center gap-2.5 transition-all whitespace-nowrap bg-white/5";
+                btnMatrix.className = "py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5";
+            } else {
+                summaryTab.classList.add('hidden');
+                matrixTab.classList.remove('hidden');
+                btnMatrix.className = "py-3 px-6 text-sm font-black border-b-4 border-brand-gold text-brand-gold flex items-center gap-2.5 transition-all whitespace-nowrap bg-white/5";
+                btnSummary.className = "py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5";
+            }
+        }
+
+        // Switch tabs inside Quotation View
+        function switchQuotationTab(tabId) {
+            currentQuotationTab = tabId;
+            const tabs = ['summary', 'sheet1', 'sheet2', 'sheet3'];
+            tabs.forEach(t => {
+                const section = document.getElementById(`tab-q-${t}`);
+                const btn = document.getElementById(`tab-q-${t}-btn`);
+                if (t === tabId) {
+                    section.classList.remove('hidden');
+                    if(btn) btn.className = "py-3 px-6 text-sm font-black border-b-4 border-brand-gold text-brand-gold flex items-center gap-2.5 transition-all whitespace-nowrap bg-white/5";
+                } else {
+                    section.classList.add('hidden');
+                    if(btn) btn.className = "py-3 px-6 text-sm font-bold border-b-4 border-transparent text-gray-300 hover:text-white flex items-center gap-2.5 transition-all whitespace-nowrap hover:bg-white/5";
+                }
+            });
+        }
+
+        // Render Matrix Table
+        function renderMatrixTable() {
+            const tbody = document.getElementById('matrixTableBody');
+            tbody.innerHTML = '';
+            const searchTerm = document.getElementById('searchInput') ? document.getElementById('searchInput').value.toLowerCase() : '';
+
+            const filtered = combinedMatrixData.filter(item => {
+                let matchSystem = true;
+                if (currentSystemFilter === 'RIYADH/BELDEN') matchSystem = (item.supplier === 'RIYADH/BELDEN');
+                else if (currentSystemFilter === 'WESCOSA') matchSystem = (item.supplier === 'WESCOSA');
+                else if (currentSystemFilter === 'ALROUF') matchSystem = (item.supplier === 'ALROUF');
+                else if (currentSystemFilter === 'PANASONIC') matchSystem = (item.supplier === 'PANASONIC');
+
+                const matchSearch = item.reqAr.toLowerCase().includes(searchTerm) ||
+                                    item.reqEn.toLowerCase().includes(searchTerm) ||
+                                    item.prodAr.toLowerCase().includes(searchTerm) ||
+                                    item.prodEn.toLowerCase().includes(searchTerm) ||
+                                    item.code.toLowerCase().includes(searchTerm) ||
+                                    item.specRef.toLowerCase().includes(searchTerm);
+                return matchSystem && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="py-16 text-center text-gray-400 font-bold"><i class="fa-solid fa-folder-open text-5xl mb-3 block text-gray-300"></i><span>لا توجد نتائج مطابقة للبحث المحدد</span></td></tr>`;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const isCompliant = item.status === 'COMPLIANT';
+                const statusClass = isCompliant ? 'bg-emerald-100 text-emerald-800 border-emerald-300 shadow-sm' : 'bg-blue-100 text-blue-800 border-blue-300 shadow-sm';
+                const statusIcon = isCompliant ? 'fa-check-circle' : 'fa-award';
+                
+                let supplierBadge = 'bg-gray-100 text-gray-800 border-gray-300';
+                if (item.supplier === 'WESCOSA') supplierBadge = 'bg-amber-100 text-amber-900 border-amber-300 shadow-sm';
+                else if (item.supplier === 'ALROUF') supplierBadge = 'bg-blue-100 text-brand-navy border-blue-300 shadow-sm';
+                else if (item.supplier === 'PANASONIC') supplierBadge = 'bg-emerald-100 text-emerald-900 border-emerald-300 shadow-sm';
+                else if (item.supplier === 'RIYADH/BELDEN') supplierBadge = 'bg-indigo-100 text-indigo-900 border-indigo-300 shadow-sm';
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-amber-50/60 transition-all duration-200 cursor-pointer border-b border-gray-100 group";
+                tr.onclick = () => openModal(item.id);
+
+                tr.innerHTML = `
+                    <td class="py-4 px-4 text-center font-black text-gray-400 font-en group-hover:text-brand-navy">${item.id}</td>
+                    <td class="py-4 px-4 text-center">
+                        <span class="px-3 py-1 rounded-xl text-xs font-black border ${supplierBadge} font-en inline-block">${item.supplier}</span>
+                    </td>
+                    <td class="py-4 px-6 font-bold text-gray-900 leading-relaxed">
+                        <div>${currentLang === 'ar' ? item.reqAr : item.reqEn}</div>
+                        <div class="text-xs font-normal text-gray-400 mt-1 font-en">${currentLang === 'ar' ? item.reqEn : item.reqAr}</div>
+                    </td>
+                    <td class="py-4 px-4 text-center font-en text-xs font-black text-brand-navy">${item.specRef}</td>
+                    <td class="py-4 px-6 text-gray-700 leading-relaxed font-semibold">
+                        <div>${currentLang === 'ar' ? item.prodAr : item.prodEn}</div>
+                        <div class="text-xs text-gray-400 mt-1 font-en font-normal">${currentLang === 'ar' ? item.prodEn : item.prodAr}</div>
+                    </td>
+                    <td class="py-4 px-4 text-center">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 border border-gray-200 font-black text-xs rounded-xl font-en inline-block shadow-sm">${item.code}</span>
+                    </td>
+                    <td class="py-4 px-4 text-center">
+                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-black border ${statusClass}">
+                            <i class="fa-solid ${statusIcon}"></i>
+                            <span>${currentLang === 'ar' ? item.statusAr : (isCompliant ? 'Compliant' : 'Higher Spec')}</span>
+                        </span>
+                    </td>
+                    <td class="py-4 px-4 text-center">
+                        <button class="p-2.5 text-brand-navy bg-blue-50 group-hover:bg-brand-navy group-hover:text-white rounded-xl transition shadow-sm"><i class="fa-solid fa-up-right-from-square"></i></button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Render Quotation Tables
+        function renderQuotationTables() {
+            renderSingleQuotationTable('01-Conduits & Boxes', 'tableBodySheet1');
+            renderSingleQuotationTable('02-Wires & Cables', 'tableBodySheet2');
+            renderSingleQuotationTable('03-Cable Tray & Trunk', 'tableBodySheet3');
+        }
+
+        function renderSingleQuotationTable(sheetKey, tbodyId, searchTerm = '') {
+            const tbody = document.getElementById(tbodyId);
+            if (!tbody) return;
+            tbody.innerHTML = '';
+            const items = quotationData[sheetKey];
+
+            const filtered = items.filter(item => {
+                const s = searchTerm.toLowerCase();
+                return item.description.toLowerCase().includes(s) ||
+                       item.size.toLowerCase().includes(s) ||
+                       item.remarks.toLowerCase().includes(s) ||
+                       item.no.toString().includes(s);
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" class="py-12 text-center text-gray-400 font-bold"><i class="fa-solid fa-folder-open text-4xl mb-2 block text-gray-300"></i><span>لا توجد نتائج مطابقة للبحث</span></td></tr>`;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-amber-50/60 transition-all duration-200 border-b border-gray-100";
+                tr.innerHTML = `
+                    <td class="py-3.5 px-3 text-center font-black text-gray-400 font-en">${item.no}</td>
+                    <td class="py-3.5 px-6 font-bold text-gray-900">${item.description}</td>
+                    <td class="py-3.5 px-4 text-center font-en text-xs font-black text-brand-navy">${item.size}</td>
+                    <td class="py-3.5 px-6 text-xs text-gray-500 font-medium">${item.remarks}</td>
+                    <td class="py-3.5 px-4 text-center font-en font-black">${item.qty.toLocaleString('en-US')}</td>
+                    <td class="py-3.5 px-4 text-center font-en text-xs font-semibold">${item.unit}</td>
+                    <td class="py-3.5 px-4 text-center font-en font-semibold">${item.unitPrice.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 5})}</td>
+                    <td class="py-3.5 px-4 text-center font-en font-black text-brand-navy">${item.totalPrice.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} SAR</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterTable(sheetId) {
+            if (sheetId === 'sheet1') {
+                const val = document.getElementById('searchSheet1').value;
+                renderSingleQuotationTable('01-Conduits & Boxes', 'tableBodySheet1', val);
+            } else if (sheetId === 'sheet2') {
+                const val = document.getElementById('searchSheet2').value;
+                renderSingleQuotationTable('02-Wires & Cables', 'tableBodySheet2', val);
+            } else if (sheetId === 'sheet3') {
+                const val = document.getElementById('searchSheet3').value;
+                renderSingleQuotationTable('03-Cable Tray & Trunk', 'tableBodySheet3', val);
+            }
+        }
+
+        function setSystemFilter(sys) {
+            currentSystemFilter = sys;
+            const btnAll = document.getElementById('filter-sys-all');
+            const btnCables = document.getElementById('filter-sys-cables');
+            const btnWescosa = document.getElementById('filter-sys-wescosa');
+            const btnAlrouf = document.getElementById('filter-sys-alrouf');
+            const btnPanasonic = document.getElementById('filter-sys-panasonic');
+
+            [btnAll, btnCables, btnWescosa, btnAlrouf, btnPanasonic].forEach(b => {
+                if(b) b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 transition hover:scale-105 active:scale-95";
+            });
+
+            if (sys === 'ALL' && btnAll) btnAll.className = "px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95";
+            else if (sys === 'RIYADH/BELDEN' && btnCables) btnCables.className = "px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95";
+            else if (sys === 'WESCOSA' && btnWescosa) btnWescosa.className = "px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95";
+            else if (sys === 'ALROUF' && btnAlrouf) btnAlrouf.className = "px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95";
+            else if (sys === 'PANASONIC' && btnPanasonic) btnPanasonic.className = "px-4 py-2 rounded-xl text-xs font-bold bg-brand-navy text-white transition shadow-sm hover:scale-105 active:scale-95";
+
+            renderMatrixTable();
+        }
+
+        function filterMatrix() {
+            renderMatrixTable();
+        }
+
+        function openModal(id) {
+            const item = combinedMatrixData.find(i => i.id === id);
+            if (!item) return;
+
+            document.getElementById('modalItemNumber').textContent = item.id;
+            document.getElementById('modalTitle').textContent = currentLang === 'ar' ? `البند رقم ${item.id} (${item.supplier}): ${item.reqAr}` : `Item #${item.id} (${item.supplier}): ${item.reqEn}`;
+            document.getElementById('modalStatusBadge').textContent = currentLang === 'ar' ? `الحالة الفنية: ${item.statusAr}` : `Status: ${item.status}`;
+            document.getElementById('modalSpecText').textContent = currentLang === 'ar' ? item.reqAr : item.reqEn;
+            document.getElementById('modalProdText').textContent = currentLang === 'ar' ? item.prodAr : item.prodEn;
+            document.getElementById('modalRemarksText').textContent = currentLang === 'ar' ? item.remarksAr : item.remarksEn;
+
+            const modal = document.getElementById('detailModal');
+            const container = document.getElementById('modalContainer');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('detailModal');
+            const container = document.getElementById('modalContainer');
+            modal.classList.add('opacity-0');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            const html = document.documentElement;
+            const langLabel = document.getElementById('langLabel');
+            const masterBtnText = document.getElementById('masterBtnText');
+            const headerSubTitle = document.getElementById('headerSubTitle');
+
+            if (currentLang === 'en') {
+                html.dir = 'ltr';
+                html.lang = 'en';
+                langLabel.textContent = 'عربي';
+                if (currentActiveView === 'matrix') {
+                    masterBtnText.textContent = 'Go to Quotation';
+                    headerSubTitle.textContent = 'Comprehensive Unified Technical Compliance Matrix - Electrical (Division 26)';
+                } else {
+                    masterBtnText.textContent = 'Back to Compliance Matrix';
+                    headerSubTitle.textContent = 'Electrical First Fix Material Quotation - Supply Only (Division 26)';
+                }
+            } else {
+                html.dir = 'rtl';
+                html.lang = 'ar';
+                langLabel.textContent = 'English';
+                if (currentActiveView === 'matrix') {
+                    masterBtnText.textContent = 'الذهاب الي عرض السعر';
+                    headerSubTitle.textContent = 'مصفوفة المطابقة الفنية الموحدة الشاملة - أعمال الكهرباء (Division 26)';
+                } else {
+                    masterBtnText.textContent = 'العودة إلى جدول المطابقة';
+                    headerSubTitle.textContent = 'عرض سعر المواد الكهربائية - التوريد فقط (Division 26) - اعتماد م. هاني';
+                }
+            }
+
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) el.textContent = text;
+            });
+
+            renderMatrixTable();
+            renderQuotationTables();
+        }
+    </script>
+</body>
+</html>
